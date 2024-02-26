@@ -1,0 +1,201 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpjhfvdclln3x"]
+
+[ext_resource type="Script" path="res://Scripts/cricket_MODE.gd" id="1_6qgp5"]
+[ext_resource type="Texture2D" uid="uid://brv3be400bwdp" path="res://image/Fondos/cricket_menu.png" id="2_obm7v"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6qgp5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_obm7v")
+
+[node name="HBoxJugadores" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -345.0
+offset_top = 216.0
+offset_right = 345.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="jugadores1" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "1"
+flat = true
+
+[node name="jugadores2" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "2"
+flat = true
+
+[node name="jugadores3" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "3"
+flat = true
+
+[node name="jugadores4" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "4"
+flat = true
+
+[node name="jugadores5" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "5"
+flat = true
+
+[node name="jugadores6" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "6"
+flat = true
+
+[node name="jugadores7" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "7"
+flat = true
+
+[node name="jugadores8" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "8"
+flat = true
+
+[node name="CutThroat" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = 373.0
+offset_right = 120.0
+offset_bottom = 423.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+button_pressed = true
+text = "CUT THROAT"
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -238.0
+offset_top = -120.0
+offset_right = -58.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 23.12
+offset_top = 43.08
+offset_right = 22.64
+offset_bottom = -10.04
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -609.0
+offset_top = 429.0
+offset_right = 634.0
+offset_bottom = -476.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Normal" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "NORMAL"
+flat = true
+
+[node name="Low" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "LOW"
+flat = true
+
+[node name="Crazy" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "CRAZY"
+flat = true
+
+[connection signal="pressed" from="HBoxJugadores/jugadores1" to="." method="_on_jugadores_1_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores2" to="." method="_on_jugadores_2_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores3" to="." method="_on_jugadores_3_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores4" to="." method="_on_jugadores_4_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores5" to="." method="_on_jugadores_5_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores6" to="." method="_on_jugadores_6_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores7" to="." method="_on_jugadores_7_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores8" to="." method="_on_jugadores_8_pressed"]
+[connection signal="toggled" from="CutThroat" to="." method="_on_cut_throat_toggled"]
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="HBoxContainer/Normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="HBoxContainer/Low" to="." method="_on_low_pressed"]
+[connection signal="pressed" from="HBoxContainer/Crazy" to="." method="_on_crazy_pressed"]

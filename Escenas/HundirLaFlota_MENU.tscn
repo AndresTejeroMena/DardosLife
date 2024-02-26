@@ -1,0 +1,354 @@
+[gd_scene load_steps=14 format=3 uid="uid://djamoldhaspw1"]
+
+[ext_resource type="Script" path="res://Scripts/HundirLaFlota/HundirLaFlota_MENU.gd" id="1_bkhun"]
+[ext_resource type="Texture2D" uid="uid://c2b8dul8vaa61" path="res://image/HundirLaFlota/submarino.png" id="2_1r1fu"]
+[ext_resource type="Texture2D" uid="uid://kx1ew5b1eoal" path="res://image/HundirLaFlota/submarino.jpg" id="2_6r0pc"]
+[ext_resource type="Texture2D" uid="uid://45aabr6xdwrf" path="res://image/Fondos/hundirlaflota_menu.png" id="2_6844e"]
+[ext_resource type="Texture2D" uid="uid://ce5hg3a5vbn6q" path="res://image/HundirLaFlota/destructor.jpg" id="3_sl30n"]
+[ext_resource type="Texture2D" uid="uid://cw5ij1rxs12g6" path="res://image/HundirLaFlota/crucero.jpg" id="4_3a0e2"]
+[ext_resource type="Texture2D" uid="uid://blojvt7qnn3b5" path="res://image/HundirLaFlota/destructor.png" id="4_7gffi"]
+[ext_resource type="Texture2D" uid="uid://biqgxmbb5dobr" path="res://image/HundirLaFlota/acorazado.jpg" id="5_tjwpv"]
+[ext_resource type="Texture2D" uid="uid://6kbbulp1bqet" path="res://image/HundirLaFlota/portaviones.jpg" id="6_k0iii"]
+[ext_resource type="Texture2D" uid="uid://e3uh4mi1gchj" path="res://image/HundirLaFlota/crucero.png" id="6_l7ogf"]
+[ext_resource type="Texture2D" uid="uid://b1cgokcva0ksk" path="res://image/HundirLaFlota/radar.jpg" id="7_hr0y8"]
+[ext_resource type="Texture2D" uid="uid://c7rt2ic758037" path="res://image/HundirLaFlota/acorazado.png" id="8_65y71"]
+[ext_resource type="Texture2D" uid="uid://det3o4x0qfe7m" path="res://image/HundirLaFlota/portaviones.png" id="10_j5q25"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bkhun")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_6844e")
+
+[node name="BARCOS" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.118
+anchor_right = 0.932
+anchor_bottom = 0.477
+offset_left = 8.32
+offset_top = 146.56
+offset_right = 17.5601
+offset_bottom = 227.84
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Submarino" type="VBoxContainer" parent="BARCOS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="BARCOS/Submarino"]
+layout_mode = 2
+texture = ExtResource("2_1r1fu")
+expand_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="BARCOS/Submarino"]
+layout_mode = 2
+texture = ExtResource("2_6r0pc")
+expand_mode = 4
+
+[node name="Ajustes" type="HBoxContainer" parent="BARCOS/Submarino"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 2.46
+
+[node name="-" type="Button" parent="BARCOS/Submarino/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "   -   "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Submarino/Ajustes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="text" type="Label" parent="BARCOS/Submarino/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "    SUBMARINOS    "
+horizontal_alignment = 1
+
+[node name="numero" type="Label" parent="BARCOS/Submarino/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="+" type="Button" parent="BARCOS/Submarino/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "  +  "
+
+[node name="Destructor" type="VBoxContainer" parent="BARCOS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect2" type="TextureRect" parent="BARCOS/Destructor"]
+layout_mode = 2
+texture = ExtResource("4_7gffi")
+expand_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="BARCOS/Destructor"]
+layout_mode = 2
+texture = ExtResource("3_sl30n")
+expand_mode = 4
+
+[node name="Ajustes" type="HBoxContainer" parent="BARCOS/Destructor"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="-" type="Button" parent="BARCOS/Destructor/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "   -   "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Destructor/Ajustes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="text" type="Label" parent="BARCOS/Destructor/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "   DESTRUCTORES   "
+horizontal_alignment = 1
+
+[node name="numero" type="Label" parent="BARCOS/Destructor/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="+" type="Button" parent="BARCOS/Destructor/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "  +  "
+
+[node name="Crucero" type="VBoxContainer" parent="BARCOS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect2" type="TextureRect" parent="BARCOS/Crucero"]
+layout_mode = 2
+texture = ExtResource("6_l7ogf")
+expand_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="BARCOS/Crucero"]
+layout_mode = 2
+texture = ExtResource("4_3a0e2")
+expand_mode = 4
+
+[node name="Ajustes" type="HBoxContainer" parent="BARCOS/Crucero"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="-" type="Button" parent="BARCOS/Crucero/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "   -   "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Crucero/Ajustes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="text" type="Label" parent="BARCOS/Crucero/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "        CRUCEROS        "
+horizontal_alignment = 1
+
+[node name="numero" type="Label" parent="BARCOS/Crucero/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="+" type="Button" parent="BARCOS/Crucero/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "  +  "
+
+[node name="Acorazado" type="VBoxContainer" parent="BARCOS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect2" type="TextureRect" parent="BARCOS/Acorazado"]
+layout_mode = 2
+texture = ExtResource("8_65y71")
+expand_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="BARCOS/Acorazado"]
+layout_mode = 2
+texture = ExtResource("5_tjwpv")
+expand_mode = 4
+
+[node name="Ajustes" type="HBoxContainer" parent="BARCOS/Acorazado"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="-" type="Button" parent="BARCOS/Acorazado/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "   -   "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Acorazado/Ajustes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="text" type="Label" parent="BARCOS/Acorazado/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "     ACORAZADOS     "
+horizontal_alignment = 1
+
+[node name="numero" type="Label" parent="BARCOS/Acorazado/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="+" type="Button" parent="BARCOS/Acorazado/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "  +  "
+
+[node name="Portaviones" type="VBoxContainer" parent="BARCOS"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect2" type="TextureRect" parent="BARCOS/Portaviones"]
+layout_mode = 2
+texture = ExtResource("10_j5q25")
+expand_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="BARCOS/Portaviones"]
+layout_mode = 2
+texture = ExtResource("6_k0iii")
+expand_mode = 4
+
+[node name="Ajustes" type="HBoxContainer" parent="BARCOS/Portaviones"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+
+[node name="-" type="Button" parent="BARCOS/Portaviones/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "   -   "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Portaviones/Ajustes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="text" type="Label" parent="BARCOS/Portaviones/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "   PORTAVIONES    "
+horizontal_alignment = 1
+
+[node name="numero" type="Label" parent="BARCOS/Portaviones/Ajustes/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "0"
+horizontal_alignment = 1
+
+[node name="+" type="Button" parent="BARCOS/Portaviones/Ajustes"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "  +  "
+
+[node name="Radar" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.438
+anchor_top = 0.591
+anchor_right = 0.562
+anchor_bottom = 0.894
+offset_left = 24.04
+offset_top = 127.72
+offset_right = -25.0399
+offset_bottom = 48.48
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Radar"]
+layout_mode = 2
+texture = ExtResource("7_hr0y8")
+expand_mode = 4
+
+[node name="On_off" type="CheckButton" parent="Radar"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+button_pressed = true
+text = "Radar"
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -231.0
+offset_top = -120.0
+offset_right = -51.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 25.12
+offset_top = 44.08
+offset_right = 24.64
+offset_bottom = -9.04004
+theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[connection signal="pressed" from="BARCOS/Submarino/Ajustes/-" to="." method="_on__pressedSUB"]
+[connection signal="pressed" from="BARCOS/Submarino/Ajustes/+" to="." method="_on__pressedSUBMAS"]
+[connection signal="pressed" from="BARCOS/Destructor/Ajustes/-" to="." method="_on__pressedDES"]
+[connection signal="pressed" from="BARCOS/Destructor/Ajustes/+" to="." method="_on__pressedDESMAS"]
+[connection signal="pressed" from="BARCOS/Crucero/Ajustes/-" to="." method="_on__pressedCRU"]
+[connection signal="pressed" from="BARCOS/Crucero/Ajustes/+" to="." method="_on__pressedCRUMAS"]
+[connection signal="pressed" from="BARCOS/Acorazado/Ajustes/-" to="." method="_on__pressedACO"]
+[connection signal="pressed" from="BARCOS/Acorazado/Ajustes/+" to="." method="_on__pressedACOMAS"]
+[connection signal="pressed" from="BARCOS/Portaviones/Ajustes/-" to="." method="_on__pressedPOR"]
+[connection signal="pressed" from="BARCOS/Portaviones/Ajustes/+" to="." method="_on__pressedPORMAS"]
+[connection signal="toggled" from="Radar/On_off" to="." method="_on_on_off_toggled"]
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]

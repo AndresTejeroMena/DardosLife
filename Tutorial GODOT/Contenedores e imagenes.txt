@@ -1,0 +1,3 @@
+Ajustar tamaño de imagen -> Expand Imagen
+Rellenar espacio del container -> dentro del hijo -> Layout -> Container Sizing -> Rellenar o Expandir
+Separar X pixeles los elementos de dentro del container -> dentro del container -> separation

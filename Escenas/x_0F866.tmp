@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cffimcfm6k0sd"]
+
+[ext_resource type="Script" path="res://Scripts/CanvasLayer_x01.gd" id="1_msrk0"]
+
+[node name="x01_GAME" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer_x01" type="CanvasLayer" parent="."]
+script = ExtResource("1_msrk0")
+
+[node name="Label" type="Label" parent="CanvasLayer_x01"]
+offset_left = 15.0
+offset_top = 49.0
+offset_right = 109.0
+offset_bottom = 72.0
+text = "GameMode:"
+
+[node name="Label_x01" type="Label" parent="CanvasLayer_x01"]
+offset_left = 115.0
+offset_top = 51.0
+offset_right = 155.0
+offset_bottom = 74.0
+text = "00"

@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://3gntixdkl1b6"]
+
+[ext_resource type="Script" path="res://Scripts/x01_MODE.gd" id="1_4gwc5"]
+
+[node name="X01Mode" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4gwc5")
+
+[node name="VBoxModo" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.515
+anchor_top = 0.5
+anchor_right = 0.515
+anchor_bottom = 0.5
+offset_left = -453.28
+offset_top = -204.0
+offset_right = 452.72
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button 301" type="Button" parent="VBoxModo"]
+layout_mode = 2
+action_mode = 0
+text = "301"
+
+[node name="Button 401" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "401"
+
+[node name="Button 501" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "501"
+
+[node name="Button 601" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "601"
+
+[node name="Button 701" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "701"
+
+[node name="Button 802" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "801"
+
+[node name="Button 903" type="Button" parent="VBoxModo"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.129412, 0.466667, 0.25098, 1)
+action_mode = 0
+text = "901"
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 987.0
+offset_top = 574.0
+offset_right = 1036.0
+offset_bottom = 605.0
+text = "Jugar"
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 28.872
+offset_top = 15.848
+offset_right = -24.416
+offset_bottom = -27.024
+text = "Atras"
+
+[connection signal="pressed" from="VBoxModo/Button 301" to="." method="_on_button_301_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 401" to="." method="_on_button_401_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 501" to="." method="_on_button_501_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 601" to="." method="_on_button_601_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 701" to="." method="_on_button_701_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 802" to="." method="_on_button_802_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 903" to="." method="_on_button_903_pressed"]
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]

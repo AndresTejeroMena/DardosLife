@@ -1,0 +1,414 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwalj822eyvts"]
+
+[ext_resource type="Script" path="res://Escenas/football_MENU.gd" id="1_fqt6a"]
+[ext_resource type="Texture2D" uid="uid://dfap0ewbiq72" path="res://image/Football/equipos.png" id="1_tnaju"]
+[ext_resource type="Texture2D" uid="uid://buxgxy8r8skds" path="res://image/Fondos/football_menu.png" id="2_5f5iq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fqt6a")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_5f5iq")
+
+[node name="SelectoresEquipo" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -744.5
+offset_top = -227.5
+offset_right = 744.5
+offset_bottom = 227.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 800
+
+[node name="Selector1" type="VBoxContainer" parent="SelectoresEquipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Tipo" type="HBoxContainer" parent="SelectoresEquipo/Selector1"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector1/Tipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="SelectoresEquipo/Selector1/Tipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "TIPO"
+horizontal_alignment = 1
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector1/Tipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Vacio2" type="Label" parent="SelectoresEquipo/Selector1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+
+[node name="Equipo" type="HBoxContainer" parent="SelectoresEquipo/Selector1"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector1/Equipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label2" type="Label" parent="SelectoresEquipo/Selector1/Equipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="SelectoresEquipo/Selector1/Equipo"]
+position = Vector2(174, 23)
+scale = Vector2(0.61125, 0.61125)
+texture = ExtResource("1_tnaju")
+hframes = 4
+vframes = 11
+frame = 3
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector1/Equipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Vacio" type="Label" parent="SelectoresEquipo/Selector1"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 160
+horizontal_alignment = 1
+
+[node name="Equipacion" type="HBoxContainer" parent="SelectoresEquipo/Selector1"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector1/Equipacion"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="SelectoresEquipo/Selector1/Equipacion"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="SelectoresEquipo/Selector1/Equipacion"]
+position = Vector2(174, 23)
+scale = Vector2(0.61125, 0.61125)
+texture = ExtResource("1_tnaju")
+hframes = 4
+vframes = 11
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector1/Equipacion"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Selector2" type="VBoxContainer" parent="SelectoresEquipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Tipo" type="HBoxContainer" parent="SelectoresEquipo/Selector2"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector2/Tipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="SelectoresEquipo/Selector2/Tipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+text = "TIPO"
+horizontal_alignment = 1
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector2/Tipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Vacio2" type="Label" parent="SelectoresEquipo/Selector2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+
+[node name="Equipo" type="HBoxContainer" parent="SelectoresEquipo/Selector2"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector2/Equipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label2" type="Label" parent="SelectoresEquipo/Selector2/Equipo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="SelectoresEquipo/Selector2/Equipo"]
+position = Vector2(174, 23)
+scale = Vector2(0.61125, 0.61125)
+texture = ExtResource("1_tnaju")
+hframes = 4
+vframes = 11
+frame = 3
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector2/Equipo"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Vacio" type="Label" parent="SelectoresEquipo/Selector2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 160
+horizontal_alignment = 1
+
+[node name="Equipacion" type="HBoxContainer" parent="SelectoresEquipo/Selector2"]
+layout_mode = 2
+
+[node name="<" type="Button" parent="SelectoresEquipo/Selector2/Equipacion"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="SelectoresEquipo/Selector2/Equipacion"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="SelectoresEquipo/Selector2/Equipacion"]
+position = Vector2(174, 23)
+scale = Vector2(0.61125, 0.61125)
+texture = ExtResource("1_tnaju")
+hframes = 4
+vframes = 11
+
+[node name=">" type="Button" parent="SelectoresEquipo/Selector2/Equipacion"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = " > "
+flat = true
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -231.0
+offset_top = -120.0
+offset_right = -51.0
+offset_bottom = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 25.12
+offset_top = 44.08
+offset_right = 24.64
+offset_bottom = -9.04004
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="Dorsales" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -222.0
+offset_right = 250.0
+offset_bottom = -27.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="High" type="Button" parent="Dorsales"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "HIGH
+10-20"
+flat = true
+
+[node name="Clasico" type="Button" parent="Dorsales"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "CLASICO
+1-11"
+flat = true
+
+[node name="Crazy" type="Button" parent="Dorsales"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 40
+text = "CRAZY
+¿?"
+flat = true
+
+[node name="Conf_fin_partida" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = 79.0
+offset_right = 301.0
+offset_bottom = 272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Limite Rondas" type="VBoxContainer" parent="Conf_fin_partida"]
+layout_mode = 2
+
+[node name="act" type="CheckButton" parent="Conf_fin_partida/Limite Rondas"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Limite de rondas"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Conf_fin_partida/Limite Rondas"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Conf_fin_partida/Limite Rondas/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="Conf_fin_partida/Limite Rondas/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "11"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="Conf_fin_partida/Limite Rondas/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+text = " > "
+flat = true
+
+[node name="Limite Goles" type="VBoxContainer" parent="Conf_fin_partida"]
+layout_mode = 2
+
+[node name="act" type="CheckButton" parent="Conf_fin_partida/Limite Goles"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+theme_override_font_sizes/font_size = 30
+button_pressed = true
+text = "Limite de Goles"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Conf_fin_partida/Limite Goles"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Conf_fin_partida/Limite Goles/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+text = " < "
+flat = true
+
+[node name="Label" type="Label" parent="Conf_fin_partida/Limite Goles/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 100
+text = "11"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="Conf_fin_partida/Limite Goles/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
+text = " > "
+flat = true
+
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Tipo/<" to="." method="_on__pressed"]
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Tipo/>" to="." method="_on__pressed2"]
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Equipo/<" to="." method="_on__pressed3"]
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Equipo/>" to="." method="_on__pressed4"]
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Equipacion/<" to="." method="_on__pressed5"]
+[connection signal="pressed" from="SelectoresEquipo/Selector1/Equipacion/>" to="." method="_on__pressed5"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Tipo/<" to="." method="_on__pressed6"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Tipo/>" to="." method="_on__pressed7"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Equipo/<" to="." method="_on__pressed8"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Equipo/>" to="." method="_on__pressed9"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Equipacion/<" to="." method="_on__pressed10"]
+[connection signal="pressed" from="SelectoresEquipo/Selector2/Equipacion/>" to="." method="_on__pressed10"]
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="Dorsales/High" to="." method="_on_high_pressed"]
+[connection signal="pressed" from="Dorsales/Clasico" to="." method="_on_clasico_pressed"]
+[connection signal="pressed" from="Dorsales/Crazy" to="." method="_on_crazy_pressed"]
+[connection signal="toggled" from="Conf_fin_partida/Limite Rondas/act" to="." method="_on_act_toggled_rondas"]
+[connection signal="pressed" from="Conf_fin_partida/Limite Rondas/HBoxContainer/Button" to="." method="_on_button_pressed_rondasmenos"]
+[connection signal="pressed" from="Conf_fin_partida/Limite Rondas/HBoxContainer/Button2" to="." method="_on_button_2_pressedrondasmas"]
+[connection signal="toggled" from="Conf_fin_partida/Limite Goles/act" to="." method="_on_act_toggled"]
+[connection signal="pressed" from="Conf_fin_partida/Limite Goles/HBoxContainer/Button" to="." method="_on_button_pressed_golesmenos"]
+[connection signal="pressed" from="Conf_fin_partida/Limite Goles/HBoxContainer/Button2" to="." method="_on_button_2_pressed_golesmas"]

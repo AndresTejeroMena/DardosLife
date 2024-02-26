@@ -1,0 +1,812 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvw4untr1w1po"]
+
+[ext_resource type="Script" path="res://Scripts/cricket_GAME.gd" id="1_8kor5"]
+[ext_resource type="Texture2D" uid="uid://dkn57qkdgeeon" path="res://image/Cricket.png" id="1_usn6f"]
+
+[node name="cricket_GAME" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 3.0
+offset_right = 3.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8kor5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Dardos" type="Label" parent="CanvasLayer"]
+offset_left = 252.0
+offset_top = 569.0
+offset_right = 1073.0
+offset_bottom = 701.0
+theme_override_font_sizes/font_size = 30
+text = "Dardo 1:                Dardo 2:                Dardo 3:"
+
+[node name="dardo1" type="Label" parent="CanvasLayer/Dardos"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -6.0
+offset_right = 311.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 40
+text = "000"
+
+[node name="dardo2" type="Label" parent="CanvasLayer/Dardos"]
+layout_mode = 0
+offset_left = 377.0
+offset_top = -7.0
+offset_right = 560.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 40
+text = "000"
+
+[node name="dardo3" type="Label" parent="CanvasLayer/Dardos"]
+layout_mode = 0
+offset_left = 633.0
+offset_top = -6.0
+offset_right = 816.0
+offset_bottom = 49.0
+theme_override_font_sizes/font_size = 40
+text = "000"
+
+[node name="Objetivos" type="Label" parent="CanvasLayer"]
+offset_left = -25.0
+offset_top = 6.0
+offset_right = 1013.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 30
+
+[node name="N1" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 22.0
+offset_right = 426.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N2" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 22.0
+offset_right = 526.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N3" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 570.0
+offset_top = 22.0
+offset_right = 626.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N4" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 670.0
+offset_top = 22.0
+offset_right = 726.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N5" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 769.0
+offset_top = 22.0
+offset_right = 825.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N6" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 22.0
+offset_right = 926.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="N7" type="Label" parent="CanvasLayer/Objetivos"]
+layout_mode = 0
+offset_left = 969.0
+offset_top = 22.0
+offset_right = 1025.0
+offset_bottom = 77.0
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+
+[node name="J1" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 99.0
+offset_right = 323.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 1"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J1"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J2" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 153.0
+offset_right = 323.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 2"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J2"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J3" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 207.0
+offset_right = 323.0
+offset_bottom = 249.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 3"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J3"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J4" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 263.0
+offset_right = 323.0
+offset_bottom = 305.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 4"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J4"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J5" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 318.0
+offset_right = 323.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 5"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J5"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J6" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 374.0
+offset_right = 323.0
+offset_bottom = 416.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 6"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J6"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J7" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 484.0
+offset_right = 323.0
+offset_bottom = 526.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 8"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J7"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J8" type="Label" parent="CanvasLayer"]
+offset_left = 186.0
+offset_top = 431.0
+offset_right = 323.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 7"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(185, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(285, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(385, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(485, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(585, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(685, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/J8"]
+position = Vector2(785, 22)
+scale = Vector2(0.374547, 0.433333)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="Pts" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.905
+anchor_top = 0.057
+anchor_right = 0.944
+anchor_bottom = 0.122
+offset_left = 6.43994
+offset_top = -4.936
+offset_right = 6.51196
+offset_bottom = -5.05601
+theme_override_font_sizes/font_size = 30
+text = "Pts"
+
+[node name="J1" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 0.0159988
+offset_right = 6.43999
+offset_bottom = 7.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J2" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 54.016
+offset_right = 6.43999
+offset_bottom = 61.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J3" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 109.016
+offset_right = 6.43999
+offset_bottom = 116.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J4" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 164.016
+offset_right = 6.43999
+offset_bottom = 171.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J5" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 218.016
+offset_right = 6.43999
+offset_bottom = 225.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J6" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 275.016
+offset_right = 6.43999
+offset_bottom = 282.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J7" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 334.016
+offset_right = 6.43999
+offset_bottom = 341.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="J8" type="Label" parent="CanvasLayer/Pts"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.333
+anchor_top = 1.452
+anchor_right = 1.568
+anchor_bottom = 2.595
+offset_left = -0.0149994
+offset_top = 386.016
+offset_right = 6.43999
+offset_bottom = 393.01
+theme_override_font_sizes/font_size = 40
+text = "0000"
+horizontal_alignment = 1
+
+[node name="Out" type="Button" parent="."]
+offset_left = 36.0
+offset_top = 423.0
+offset_right = 169.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 30
+text = "OUT >>"
+
+[node name="Rewrite" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 479.0
+offset_right = 169.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 30
+text = "REWRITE"
+
+[node name="NEXT" type="Button" parent="."]
+offset_left = 36.0
+offset_top = 535.0
+offset_right = 169.0
+offset_bottom = 585.0
+theme_override_font_sizes/font_size = 30
+text = "NEXT >>"
+
+[node name="Leyenda_modo" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 12.0
+offset_right = 164.0
+offset_bottom = 139.0
+text = "GameMode:
+Cut Throat: 
+Numero Jugadores: 
+Ronda Actual:
+
+TURNO JUGADOR:"
+
+[node name="Label_modo" type="Label" parent="Leyenda_modo"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 2.0
+offset_right = 140.0
+offset_bottom = 25.0
+text = "00"
+
+[node name="Label_cut_thorat" type="Label" parent="Leyenda_modo"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 27.0
+offset_right = 137.0
+offset_bottom = 50.0
+text = "0000"
+
+[node name="Label_numerojugadores" type="Label" parent="Leyenda_modo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.156
+anchor_right = 0.179
+anchor_bottom = 0.191
+offset_left = 131.954
+offset_top = 31.188
+offset_right = 136.971
+offset_bottom = 51.563
+text = "0"
+
+[node name="Label_RondaActual" type="Label" parent="Leyenda_modo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.156
+anchor_right = 0.179
+anchor_bottom = 0.191
+offset_left = 87.954
+offset_top = 55.188
+offset_right = 111.004
+offset_bottom = 75.653
+text = "0"
+
+[node name="Turno_jugador" type="Label" parent="Leyenda_modo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.156
+anchor_right = 0.179
+anchor_bottom = 0.191
+offset_left = -4.046
+offset_top = 137.132
+offset_right = 99.971
+offset_bottom = 295.777
+theme_override_font_sizes/font_size = 100
+text = "J1"

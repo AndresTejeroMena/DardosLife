@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3 uid="uid://buyon13iqexs8"]
+
+[ext_resource type="Script" path="res://Scripts/Conecta4/Conecta4_MENU.gd" id="1_6kf7g"]
+[ext_resource type="Texture2D" uid="uid://djchtjmvyh8rx" path="res://image/Fondos/conecta4_menu.png" id="2_tan8g"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6kf7g")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_tan8g")
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -232.0
+offset_top = -111.0
+offset_right = -52.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 18.12
+offset_top = 51.08
+offset_right = 17.64
+offset_bottom = -2.04004
+theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -463.0
+offset_top = 492.0
+offset_right = 454.0
+offset_bottom = -258.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Normal" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
+theme_override_font_sizes/font_size = 60
+text = "NORMAL"
+flat = true
+
+[node name="Low" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
+theme_override_font_sizes/font_size = 60
+text = "LOW"
+flat = true
+
+[node name="Crazy" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
+theme_override_font_sizes/font_size = 60
+text = "CRAZY"
+flat = true
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="HBoxContainer/Normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="HBoxContainer/Low" to="." method="_on_low_pressed"]
+[connection signal="pressed" from="HBoxContainer/Crazy" to="." method="_on_crazy_pressed"]

@@ -1,0 +1,636 @@
+[gd_scene load_steps=46 format=3 uid="uid://cffimcfm6k0sd"]
+
+[ext_resource type="Script" path="res://Scripts/CanvasLayer_x01.gd" id="1_msrk0"]
+[ext_resource type="Texture2D" uid="uid://b2hw665kyuk4d" path="res://image/Fondos/x01_game.png" id="1_otjey"]
+[ext_resource type="Texture2D" uid="uid://bbrrdgfldrw8w" path="res://image/Fondos/x01_tabla_finales.png" id="3_jnpjs"]
+[ext_resource type="Texture2D" uid="uid://cnufia23fcthe" path="res://image/dardo.png" id="3_vm3y7"]
+[ext_resource type="Texture2D" uid="uid://c6ly6c5eu4p2x" path="res://Video/win_amarillo.png" id="5_2ingd"]
+[ext_resource type="AudioStream" uid="uid://ijctrgg4ehw7" path="res://Video/win.ogg" id="6_vlc8n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1djhh"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(0, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_um7mh"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(1920, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhy0f"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(3840, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q6uh"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(5760, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rlhu"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(7680, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u35q5"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(9600, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpb1j"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(11520, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo6ps"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(13440, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7f5b"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(0, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sl13"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(1920, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_li4fd"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(3840, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0x1q"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(5760, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17f1n"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(7680, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gp6r"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(9600, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2aju"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(11520, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_411wb"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(13440, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge3f2"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(0, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lx4ho"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(1920, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxpts"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(3840, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehvws"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(5760, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqvks"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(7680, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4f44"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(9600, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjp2c"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(11520, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htk1a"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(13440, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88mqf"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(0, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dbl8"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(1920, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bifou"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(3840, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab6p0"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(5760, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3khhl"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(7680, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0ux4"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(9600, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d40am"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(11520, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ius1"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(13440, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bosu4"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(0, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8odr"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(1920, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tts5k"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(3840, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sodvf"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(5760, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvkos"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(7680, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gxb5"]
+atlas = ExtResource("5_2ingd")
+region = Rect2(9600, 4352, 1920, 1088)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ny7l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1djhh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_um7mh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhy0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q6uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rlhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u35q5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpb1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo6ps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7f5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6sl13")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_li4fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0x1q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17f1n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gp6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2aju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_411wb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ge3f2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lx4ho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxpts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehvws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eqvks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4f44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjp2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htk1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88mqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dbl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bifou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ab6p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3khhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0ux4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d40am")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ius1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bosu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8odr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tts5k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sodvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvkos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gxb5")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="x01_GAME" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_otjey")
+
+[node name="CanvasLayer_x01" type="CanvasLayer" parent="."]
+script = ExtResource("1_msrk0")
+
+[node name="Leyenda_modo" type="Label" parent="CanvasLayer_x01"]
+offset_left = 74.0
+offset_top = 81.0
+offset_right = 394.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 30
+text = "GameMode:
+Empezar en dobles:
+Acabar en dobles:
+Numero Jugadores: 
+Ronda Actual:"
+
+[node name="Label_x01" type="Label" parent="CanvasLayer_x01/Leyenda_modo"]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 1.0
+offset_right = 226.0
+offset_bottom = 43.0
+theme_override_font_sizes/font_size = 30
+text = "00"
+
+[node name="Label_acabar" type="Label" parent="CanvasLayer_x01/Leyenda_modo"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 91.0
+offset_right = 329.0
+offset_bottom = 133.0
+theme_override_font_sizes/font_size = 30
+text = "0000"
+
+[node name="Label_empezar" type="Label" parent="CanvasLayer_x01/Leyenda_modo"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 47.0
+offset_right = 356.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 30
+text = "0000"
+
+[node name="Label_numerojugadores" type="Label" parent="CanvasLayer_x01/Leyenda_modo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.156
+anchor_right = 0.179
+anchor_bottom = 0.191
+offset_left = 244.828
+offset_top = 102.368
+offset_right = 252.522
+offset_bottom = 136.598
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Label_RondaActual" type="Label" parent="CanvasLayer_x01/Leyenda_modo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146
+anchor_top = 0.156
+anchor_right = 0.179
+anchor_bottom = 0.191
+offset_left = 166.828
+offset_top = 147.368
+offset_right = 189.878
+offset_bottom = 181.598
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Leyenda_jugadores" type="Label" parent="CanvasLayer_x01"]
+offset_left = 523.0
+offset_top = 72.0
+offset_right = 2286.0
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 30
+text = "Jugador 1 	   Jugador 2 	   Jugador 3 	   Jugador 4 	   Jugador 5     Jugador 6 	   Jugador 7 	   Jugador 8"
+
+[node name="Leyenda_jugador" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 677.0
+offset_right = 731.0
+offset_bottom = 814.0
+theme_override_font_sizes/font_size = 100
+text = "Jugador "
+horizontal_alignment = 1
+
+[node name="numero_jugador" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores/Leyenda_jugador"]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 2.0
+offset_right = 478.0
+offset_bottom = 139.0
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+
+[node name="ptsj1" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_top = 24.0
+offset_right = 138.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj2" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 24.0
+offset_right = 307.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj3" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 24.0
+offset_right = 476.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj4" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 508.0
+offset_top = 26.0
+offset_right = 646.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj5" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 677.0
+offset_top = 26.0
+offset_right = 815.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj6" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 854.0
+offset_top = 26.0
+offset_right = 992.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj7" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 1023.0
+offset_top = 26.0
+offset_right = 1161.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="ptsj8" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 25.0
+offset_right = 1329.0
+offset_bottom = 135.0
+theme_override_font_sizes/font_size = 80
+text = "000"
+horizontal_alignment = 1
+
+[node name="pts_centrales" type="Label" parent="CanvasLayer_x01/Leyenda_jugadores"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.326
+anchor_top = 0.154
+anchor_right = 0.753
+anchor_bottom = 0.785
+offset_left = -561.738
+offset_top = -18.396
+offset_right = -18.5391
+offset_bottom = 752.91
+theme_override_font_sizes/font_size = 600
+text = "000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dardos" type="Label" parent="CanvasLayer_x01"]
+offset_left = 50.0
+offset_top = 429.0
+offset_right = 296.0
+offset_bottom = 684.0
+theme_override_font_sizes/font_size = 60
+
+[node name="dardo1" type="Label" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = -2.0
+offset_right = 444.0
+offset_bottom = 114.0
+theme_override_font_sizes/font_size = 80
+text = "espera"
+
+[node name="dardo2" type="Label" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 84.0
+offset_right = 523.0
+offset_bottom = 198.0
+theme_override_font_sizes/font_size = 80
+text = "espera"
+
+[node name="dardo3" type="Label" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 170.0
+offset_right = 444.0
+offset_bottom = 282.0
+theme_override_font_sizes/font_size = 80
+text = "espera"
+
+[node name="im1" type="TextureRect" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 30.0
+offset_right = 249.0
+offset_bottom = 89.0
+texture = ExtResource("3_vm3y7")
+expand_mode = 1
+
+[node name="im2" type="TextureRect" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 116.0
+offset_right = 249.0
+offset_bottom = 176.0
+texture = ExtResource("3_vm3y7")
+expand_mode = 1
+
+[node name="im3" type="TextureRect" parent="CanvasLayer_x01/Dardos"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 201.0
+offset_right = 249.0
+offset_bottom = 261.0
+texture = ExtResource("3_vm3y7")
+expand_mode = 1
+
+[node name="Out" type="Button" parent="CanvasLayer_x01"]
+offset_left = 59.0
+offset_top = 810.0
+offset_right = 239.0
+offset_bottom = 880.0
+theme_override_colors/font_hover_color = Color(0.545098, 0.482353, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "OUT >>"
+flat = true
+
+[node name="Rewrite" type="Button" parent="CanvasLayer_x01"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -173.0
+offset_right = 240.0
+offset_bottom = -53.0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.545098, 0.482353, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "REWRITE"
+flat = true
+
+[node name="NEXT" type="Button" parent="CanvasLayer_x01"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -241.0
+offset_top = -172.0
+offset_right = -61.0
+offset_bottom = -52.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.545098, 0.482353, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "NEXT >>"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer_x01"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_jnpjs")
+
+[node name="tabla_dobles" type="Label" parent="CanvasLayer_x01"]
+offset_left = 756.0
+offset_top = 925.0
+offset_right = 1492.0
+offset_bottom = 1008.0
+theme_override_colors/font_color = Color(0, 0.905882, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "tabla_dobles"
+horizontal_alignment = 1
+
+[node name="videos" type="Node" parent="CanvasLayer_x01"]
+
+[node name="win" type="AnimatedSprite2D" parent="CanvasLayer_x01/videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_0ny7l")
+frame = 37
+frame_progress = 1.0
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="CanvasLayer_x01/videos/win"]
+stream = ExtResource("6_vlc8n")
+
+[node name="SALIR" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -43.0
+offset_bottom = 50.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "X"
+
+[connection signal="pressed" from="CanvasLayer_x01/Out" to="CanvasLayer_x01" method="_on_out_pressed"]
+[connection signal="pressed" from="CanvasLayer_x01/Rewrite" to="CanvasLayer_x01" method="_on_rewrite_pressed"]
+[connection signal="pressed" from="CanvasLayer_x01/NEXT" to="CanvasLayer_x01" method="_on_next_pressed"]
+[connection signal="animation_finished" from="CanvasLayer_x01/videos/win" to="CanvasLayer_x01" method="_on_win_animation_finished"]
+[connection signal="pressed" from="SALIR" to="CanvasLayer_x01" method="_on_salir_pressed"]

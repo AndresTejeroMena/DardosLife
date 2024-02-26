@@ -1,0 +1,258 @@
+[gd_scene load_steps=3 format=3 uid="uid://3gntixdkl1b6"]
+
+[ext_resource type="Script" path="res://Scripts/x01_MODE.gd" id="1_4gwc5"]
+[ext_resource type="Texture2D" uid="uid://bq2s3ms4hnox0" path="res://image/Fondos/x01_menu.png" id="2_jbure"]
+
+[node name="X01Mode" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4gwc5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_jbure")
+
+[node name="VBoxModo" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 631.0
+offset_top = -98.0
+offset_right = -629.0
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="Button 301" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "301"
+flat = true
+
+[node name="Button 401" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "401"
+flat = true
+
+[node name="Button 501" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "501"
+flat = true
+
+[node name="Button 601" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "601"
+flat = true
+
+[node name="Button 701" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "701"
+flat = true
+
+[node name="Button 802" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "801"
+flat = true
+
+[node name="Button 903" type="Button" parent="VBoxModo"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "901"
+flat = true
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -217.0
+offset_top = -133.0
+offset_right = -69.0
+offset_bottom = -56.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 50.12
+offset_top = 32.08
+offset_right = -3.168
+offset_bottom = -10.792
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Atras"
+flat = true
+
+[node name="ActivarDobles" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 35.0
+offset_top = 221.0
+offset_right = 218.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+button_pressed = true
+text = "Acabar en Dobles"
+
+[node name="EmpezarDobles" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -223.0
+offset_top = 221.0
+offset_right = -27.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Empezar en Dobles"
+
+[node name="HBoxJugadores" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = 311.0
+offset_right = 230.0
+offset_bottom = 437.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="jugadores1" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "1"
+flat = true
+
+[node name="jugadores2" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "2"
+flat = true
+
+[node name="jugadores3" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "3"
+flat = true
+
+[node name="jugadores4" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "4"
+flat = true
+
+[node name="jugadores5" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "5"
+flat = true
+
+[node name="jugadores6" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "6"
+flat = true
+
+[node name="jugadores7" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "7"
+flat = true
+
+[node name="jugadores8" type="Button" parent="HBoxJugadores"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "8"
+flat = true
+
+[connection signal="pressed" from="VBoxModo/Button 301" to="." method="_on_button_301_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 401" to="." method="_on_button_401_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 501" to="." method="_on_button_501_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 601" to="." method="_on_button_601_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 701" to="." method="_on_button_701_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 802" to="." method="_on_button_802_pressed"]
+[connection signal="pressed" from="VBoxModo/Button 903" to="." method="_on_button_903_pressed"]
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="toggled" from="ActivarDobles" to="." method="_on_activar_dobles_toggled"]
+[connection signal="toggled" from="EmpezarDobles" to="." method="_on_empezar_dobles_toggled"]
+[connection signal="pressed" from="HBoxJugadores/jugadores1" to="." method="_on_jugadores_1_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores2" to="." method="_on_jugadores_2_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores3" to="." method="_on_jugadores_3_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores4" to="." method="_on_jugadores_4_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores5" to="." method="_on_jugadores_5_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores6" to="." method="_on_jugadores_6_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores7" to="." method="_on_jugadores_7_pressed"]
+[connection signal="pressed" from="HBoxJugadores/jugadores8" to="." method="_on_jugadores_8_pressed"]

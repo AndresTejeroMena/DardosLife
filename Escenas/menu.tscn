@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=3 uid="uid://6303yig5cv1s"]
+
+[ext_resource type="Script" path="res://Scripts/control.gd" id="1_mrgwv"]
+[ext_resource type="Texture2D" uid="uid://csemen0a64jwh" path="res://image/ModosDeJuego/x01.jpg" id="2_e8d0f"]
+[ext_resource type="Texture2D" uid="uid://wkyq52olq74v" path="res://image/Fondos/menu.png" id="2_nnnhi"]
+[ext_resource type="Texture2D" uid="uid://fvbfujm36hn8" path="res://image/ModosDeJuego/Cricket.jpg" id="3_wp2ej"]
+[ext_resource type="Texture2D" uid="uid://bhuiq325ac33s" path="res://image/ModosDeJuego/HundirLaFlota.jpg" id="4_3jqoi"]
+[ext_resource type="Texture2D" uid="uid://dkrw857wln5ag" path="res://image/ModosDeJuego/Connect4.jpg" id="5_ia6mq"]
+[ext_resource type="Texture2D" uid="uid://cgrnlspdejn6i" path="res://image/ModosDeJuego/Football.jpg" id="6_ufd63"]
+[ext_resource type="Texture2D" uid="uid://c7plip34wo0ln" path="res://image/ajustes.png" id="8_6wceh"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrgwv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_nnnhi")
+
+[node name="Salir" type="Button" parent="."]
+layout_mode = 2
+offset_left = 795.0
+offset_top = 986.0
+offset_right = 1136.0
+offset_bottom = 1036.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.270588, 0.313726, 0.811765, 1)
+theme_override_font_sizes/font_size = 30
+text = "Salir"
+flat = true
+
+[node name="Container" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.142708
+anchor_top = 0.253704
+anchor_right = 0.83125
+anchor_bottom = 0.957407
+offset_left = 146.0
+offset_top = 46.0
+offset_right = -114.0
+offset_bottom = -135.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="x01" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "X01 MODE"
+icon = ExtResource("2_e8d0f")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Cricket" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "CRICKET"
+icon = ExtResource("3_wp2ej")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Hundir La Flota" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "HUNDIR LA FLOTA"
+icon = ExtResource("4_3jqoi")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Conecta 4" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "CONNECT 4"
+icon = ExtResource("5_ia6mq")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Football" type="Button" parent="Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "FOOTBALL"
+icon = ExtResource("6_ufd63")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Ajustes" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = -60.0
+offset_right = -11.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("8_6wceh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Container/x01" to="." method="_on_x_01_pressed"]
+[connection signal="pressed" from="Container/Cricket" to="." method="_on_cricket_pressed"]
+[connection signal="pressed" from="Container/Hundir La Flota" to="." method="_on_hundir_la_flota_pressed"]
+[connection signal="pressed" from="Container/Conecta 4" to="." method="_on_conecta_4_pressed"]
+[connection signal="pressed" from="Container/Football" to="." method="_on_football_pressed"]
+[connection signal="pressed" from="Ajustes" to="." method="_on_ajustes_pressed"]
