@@ -10,6 +10,7 @@ Project developer: Andrés Tejero Mena (tejeromenaandres@gmail.com).
 
 ## How does it work?
 https://youtu.be/JF_7bkpHpz4
+
 To carry out this project, the first step was to understand how an electronic dartboard works on the inside. If you dismantle one, you'll see that the sensors consist of two sheets with circuits drawn on them, separated by an insulator. One sheet has 10 circuits and the other has 7, so when a dart hits the dartboard, one circuit makes contact with another, and we can determine where it has impacted.
 
 Knowing this, I unsoldered the connectors of these sheets from the electronic board and used an Arduino to collect that information and output it through the serial port to the computer.
