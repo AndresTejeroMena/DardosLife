@@ -23,7 +23,11 @@ At this point, we already have a dartboard capable of sending information to the
 This has been a very enjoyable project that I wanted to share with you. The goal was always to challenge myself and learn; there were never any commercial purposes involved.
 ## What I've used:
 Decathlon Canaveral ED110 electronic dartboard
+
 Arduino Nano 33 Ble
+
 Soldering iron
+
 10 resistors of 10KOhm
+
 Laptop
