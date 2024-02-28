@@ -24,6 +24,8 @@ public partial class arduino : Node
 			serialPort = new SerialPort();
 			serialPort.PortName = portName;
 			serialPort.BaudRate = 9600;
+			serialPort.DtrEnable = true;
+			serialPort.RtsEnable = true;
 			serialPort.Open();
 		}
 		catch (Exception e)
@@ -65,9 +67,11 @@ public partial class arduino : Node
 		{
 			if (serialPort.BytesToRead > 0)
 			{
+				GD.Print("Se ha leido un mensaje");
 				string serialMessage = serialPort.ReadLine();
 				if (!string.IsNullOrEmpty(serialMessage))
 				{
+					GD.Print("Se ha enviado un mensaje");
 					globalNode.Call("modificar_ultimo_dardo", serialMessage);
 				}
 			}
