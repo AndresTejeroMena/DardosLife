@@ -114,6 +114,7 @@ func ronda(jugador):
 	actualizar_marcadores()
 	if check_final(jugador) == true: return
 	
+	AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 
@@ -173,6 +174,7 @@ func check_final(jugador):
 		if GLOBAL.NUMERO_JUGADORES == 1: gana = true
 		if gana == true:
 			final_partida()
+			return true
 				
 func _on_next_pressed():
 	jugador_actual += 1
@@ -182,6 +184,7 @@ func _on_next_pressed():
 	iniciar_ronda()
 func _on_out_pressed():
 	GLOBAL.ULTIMO_DARDO = "OUT"
+	GLOBAL.SONIDO_DARDO = "OUT"
 	GLOBAL.notificar_dardo_enviado()
 
 
