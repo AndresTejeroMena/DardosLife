@@ -77,6 +77,15 @@ func _ready():
 	sound["J6"] = preload("res://audio/optimus/J6.ogg")
 	sound["J7"] = preload("res://audio/optimus/J7.ogg")
 	sound["J8"] = preload("res://audio/optimus/J8.ogg")
+	
+	sound["OUT"] = preload("res://audio/optimus/OUT.ogg")
+	sound["NEXT_PLAYER"] = preload("res://audio/optimus/NEXT_PLAYER.ogg")
+	
+	sound["PASE"] = preload("res://audio/optimus/PASE.ogg")
+	
+	sound["AGUA"] = preload("res://audio/optimus/AGUA.ogg")
+	sound["TOCADO"] = preload("res://audio/optimus/TOCADO.ogg")
+	sound["HUNDIDO"] = preload("res://audio/optimus/HUNDIDO.ogg")
 
 func playsound(text):
 	var audio_player = AudioStreamPlayer.new()
