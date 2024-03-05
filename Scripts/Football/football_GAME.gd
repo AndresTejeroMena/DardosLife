@@ -435,6 +435,7 @@ func ronda(equipo):
 			break
 	
 	actualizar_pantalla()
+	AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 
@@ -456,6 +457,7 @@ func ronda_con_parada(equipo):
 		else:
 			break
 	actualizar_pantalla()
+	AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 func check_dardo(texto,equipo):
@@ -511,6 +513,7 @@ func check_dardo(texto,equipo):
 				info_jugadores1[indice] -= tipo #le restamos el tipo de tiro que ha sido
 				if info_jugadores1[indice] <= 0:#si has completado las marcas necesarias para hacer el pase
 					balon_jugador= indice
+					AUDIOS.playsound("PASE")
 					mover_balon()
 					return
 				else:
@@ -533,6 +536,7 @@ func check_dardo(texto,equipo):
 				#si si que puede recibir pase:
 				info_jugadores2[indice] -= tipo #le restamos el tipo de tiro que ha sido
 				if info_jugadores2[indice] <= 0:#si has completado las marcas necesarias para hacer el pase
+					AUDIOS.playsound("PASE")
 					balon_jugador= indice
 					mover_balon()
 					return
@@ -586,6 +590,7 @@ func _on_next_pressed():
 	iniciar_ronda()
 func _on_out_pressed():
 	GLOBAL.ULTIMO_DARDO = "OUT"
+	GLOBAL.SONIDO_DARDO = "OUT"
 	GLOBAL.notificar_dardo_enviado()
 func _on_rewrite_pressed():
 	pts1 = pts1_inicio_ronda
