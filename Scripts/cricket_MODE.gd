@@ -1,5 +1,4 @@
 extends Control
-
 func _ready():
 	pass # Replace with function body.
 
@@ -27,11 +26,7 @@ func _on_low_pressed():
 	GLOBAL.objetivos_cricket = [1,2,3,4,5,6,25]
 	GLOBAL.MODO_CRICKET = "Low"
 func _on_crazy_pressed():
-	var numeros_aleatorios = generar_numeros_aleatorios(1, 20, 6)
-	numeros_aleatorios.append(25)
-	GLOBAL.objetivos_cricket = numeros_aleatorios
 	GLOBAL.MODO_CRICKET = "Crazy"
-	print(numeros_aleatorios)
 
 func generar_numeros_aleatorios(minimo, maximo, cantidad):
 	var numeros_generados = []
@@ -44,6 +39,12 @@ func generar_numeros_aleatorios(minimo, maximo, cantidad):
 
 
 func _on_jugar_pressed():
+	if GLOBAL.MODO_CRICKET == "Crazy":
+		var numeros_aleatorios = generar_numeros_aleatorios(1, 20, 6)
+		numeros_aleatorios.append(25)
+		GLOBAL.objetivos_cricket = numeros_aleatorios
+		GLOBAL.MODO_CRICKET = "Crazy"
+		print(numeros_aleatorios)
 	get_tree().change_scene_to_file("res://Escenas/cricket_GAME.tscn")
 func _on_atras_pressed():
 	get_tree().change_scene_to_file("res://Escenas/menu.tscn")
