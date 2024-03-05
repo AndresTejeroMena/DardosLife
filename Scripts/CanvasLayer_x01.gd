@@ -130,12 +130,14 @@ func ronda(jugador):
 	actualizar_marcadores()
 	if check_final_ronda(jugador) == true: return
 	
+	AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 
 func check_final_ronda(jugador):
 	if ((puntos[jugador] <0)||((puntos[jugador]==1)&&GLOBAL.ACABAR_DOBLES == true)): #si te pasas
 		puntos[jugador] = puntos[jugador] + sacar_puntuacion(GLOBAL.ULTIMO_DARDO,jugador)
+		AUDIOS.playsound("NEXT_PLAYER")
 		$NEXT.disabled = false
 		$Rewrite.disabled = false
 		return true
@@ -146,6 +148,7 @@ func check_final_ronda(jugador):
 			return true
 		else:
 			puntos[jugador] = puntos[jugador] + sacar_puntuacion(GLOBAL.ULTIMO_DARDO,jugador)
+			AUDIOS.playsound("NEXT_PLAYER")
 			$NEXT.disabled = false
 			$Rewrite.disabled = false
 			return true
@@ -196,6 +199,7 @@ func _on_next_pressed():
 	iniciar_ronda()
 func _on_out_pressed():
 	GLOBAL.ULTIMO_DARDO = "OUT"
+	GLOBAL.SONIDO_DARDO = "OUT"
 	GLOBAL.notificar_dardo_enviado()
 
 
