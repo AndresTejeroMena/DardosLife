@@ -113,6 +113,14 @@ func generar_barco(long,T):
 		var columna_aleatoria = randi() % 20 + 1
 		#print(typeof(columna_aleatoria))
 		if hay_barco[equipo[fila_aleatoria][columna_aleatoria]] == false:
+			if (long == 1):
+				if(hay_barco[equipo[fila_aleatoria][columna_aleatoria]] == false):
+					var id = obtener_id_unico()
+					hay_barco[equipo[fila_aleatoria][columna_aleatoria]] = true
+					if radar == true: equipo[fila_aleatoria][columna_aleatoria].frame = 3
+					id_barco[equipo[fila_aleatoria][columna_aleatoria]] = id
+					#print(str(fila_aleatoria)+":"+str(columna_aleatoria)+":"+str(long))
+					break
 			# hemos encontrado un objetivo libre
 			var direcciones = ["arriba","derecha"]
 			var direccion = direcciones[randi() % direcciones.size()]
@@ -156,14 +164,7 @@ func generar_barco(long,T):
 									id_barco[equipo[1][columna_aleatoria]] = id
 									#print(str(fila_aleatoria)+":"+str(columna_aleatoria)+":"+str(long))
 									break
-					elif (long == 1):
-						if(hay_barco[equipo[fila_aleatoria][columna_aleatoria]] == false):
-							var id = obtener_id_unico()
-							hay_barco[equipo[fila_aleatoria][columna_aleatoria]] == true
-							if radar == true: equipo[fila_aleatoria][columna_aleatoria].frame = 3
-							id_barco[equipo[fila_aleatoria][columna_aleatoria]] = id
-							#print(str(fila_aleatoria)+":"+str(columna_aleatoria)+":"+str(long))
-							break
+					
 					else: continue
 					
 				"derecha":
@@ -234,7 +235,7 @@ func iniciar_ronda():
 	actualizar_marcadores()
 	guardar_frames(equipo_actual)
 	ronda(equipo_actual)
-	AUDIOS.playsound("J"+str(equipo_actual))
+	AUDIOS.playsound("J"+str(jugador_actual))
 
 func ronda(equipo):
 	$NEXT.disabled = true
@@ -242,42 +243,53 @@ func ronda(equipo):
 	await GLOBAL.enviar_dardo
 	dardos[1] = GLOBAL.ULTIMO_DARDO
 	check_dardo(GLOBAL.ULTIMO_DARDO,equipo)
-	AUDIOS.playsound(GLOBAL.SONIDO_DARDO)
 	actualizar_marcadores()
 	if check_final(equipo) == true: return
 	
 	await GLOBAL.enviar_dardo
 	dardos[2] = GLOBAL.ULTIMO_DARDO
 	check_dardo(GLOBAL.ULTIMO_DARDO,equipo)
-	AUDIOS.playsound(GLOBAL.SONIDO_DARDO)
 	actualizar_marcadores()
 	if check_final(equipo) == true: return
 	
 	await GLOBAL.enviar_dardo
 	dardos[3] = GLOBAL.ULTIMO_DARDO
 	check_dardo(GLOBAL.ULTIMO_DARDO,equipo)
-	AUDIOS.playsound(GLOBAL.SONIDO_DARDO)
 	actualizar_marcadores()
 	if check_final(equipo) == true: return
 	
+	AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 func check_dardo(texto,equipo):
 	if texto == ("OUT"):
+		AUDIOS.playsound("AGUA")
 		return
 	var partes = texto.split(":")
 	if partes.size() == 2:
 		var numero = int(partes[0].strip_edges().to_upper())
+		if numero == 25: 
+			AUDIOS.playsound("AGUA")
+			return
 		var letra = partes[1].strip_edges().to_upper()
 		var tipo: int = 0
 		match letra:
 			"S": tipo = 1
 			"D": tipo = 2
 			"T": tipo = 3
-		if equipo[tipo][numero].frame == 1: return
-		elif equipo[tipo][numero].frame == 2: return
-		elif equipo[tipo][numero].frame == 4: return
-		elif hay_barco[equipo[tipo][numero]] == false: equipo[tipo][numero].frame = 4
+		if equipo[tipo][numero].frame == 1: 
+			AUDIOS.playsound("AGUA")
+			return
+		elif equipo[tipo][numero].frame == 2: 
+			AUDIOS.playsound("AGUA")
+			return
+		elif equipo[tipo][numero].frame == 4: 
+			AUDIOS.playsound("AGUA")
+			return
+		elif hay_barco[equipo[tipo][numero]] == false: 
+			print("no hay barco")
+			AUDIOS.playsound("AGUA")
+			equipo[tipo][numero].frame = 4
 		else:  #si ha impactado en uno nuevo
 			equipo[tipo][numero].frame = 1
 			if jugador_actual == 1: impactos_T1 +=1
@@ -292,10 +304,13 @@ func check_dardo(texto,equipo):
 						if equipo[i][j].frame == 1:
 							impact_tot += 1
 			if impact_tot == obj_tot:
+				AUDIOS.playsound("HUNDIDO")
 				for i in range(1, 4):
 					for j in range(1, 21):
 						if id_barco[equipo[i][j]] == id: 
 							equipo[i][j].frame = 2
+			else: AUDIOS.playsound("TOCADO")
+							
 					
 						
 	
@@ -310,6 +325,7 @@ func _on_next_pressed():
 	iniciar_ronda()
 func _on_out_pressed():
 	GLOBAL.ULTIMO_DARDO = "OUT"
+	GLOBAL.SONIDO_DARDO = "AGUA"
 	GLOBAL.notificar_dardo_enviado()
 func _on_rewrite_pressed():
 	if jugador_actual == 1:
@@ -339,6 +355,7 @@ func check_final(equipo):
 				cont +=1
 	if cont >= total_objetivos:
 		GLOBAL.video(win,audio)
+		return true
 
 
 func _on_salir_pressed():
