@@ -24,6 +24,7 @@ var destructores : int = 0
 var submarinos : int =0
 #CONECTA 4
 var objetivos_conecta4 = [0,20,19,18,17,16,15,14]
+var CONECTA_ALEATORIO = false
 #FUTBOL
 var lista_dorsales = [1,2,3,4,5,6,7,8,9,10,11]
 var escudo1 = 3
@@ -52,7 +53,8 @@ func actualizar_sonido_dardo(texto):
 		var numero = int(partes[0])
 		var letra = partes[1].strip_edges().to_upper()
 		SONIDO_DARDO = letra + str(numero)
-		print(SONIDO_DARDO)
+	if texto == "OUT":
+		SONIDO_DARDO = "OUT"
 func video(sprite,audio):
 	sprite.visible = true
 	sprite.play()
