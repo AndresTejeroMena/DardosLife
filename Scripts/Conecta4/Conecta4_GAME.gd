@@ -27,6 +27,7 @@ func _ready():
 	preparar_marcas()
 	empezar_partida()
 	actualizar_marcador()
+	print(GLOBAL.objetivos_conecta4)
 func _process(delta):
 	for i in range(1, 7):
 		for j in range(1, 8):  # Mantenemos el rango de 1 a 7
@@ -187,7 +188,8 @@ func ronda(jugador):
 	AUDIOS.playsound(GLOBAL.SONIDO_DARDO)
 	actualizar_marcador()
 	check_dardo(GLOBAL.ULTIMO_DARDO,jugador)
-	
+	if check_final(jugador) == false:
+		AUDIOS.playsound("NEXT_PLAYER")
 	$NEXT.disabled = false
 	$Rewrite.disabled = false
 
@@ -237,7 +239,8 @@ func tirar_ficha(j,jugador):
 	await get_tree().create_timer(0.2).timeout
 	sprite_marcas[j].frame = marcas[j] + 3
 	await get_tree().create_timer(1.5).timeout
-	if check_final(jugador) == true: final_partida(jugador)
+	if check_final(jugador) == true: 
+		final_partida(jugador)
 
 func check_final(jugador):	
 	# Verificar horizontalmente
@@ -295,6 +298,7 @@ func _on_next_pressed():
 	iniciar_ronda()
 func _on_out_pressed():
 	GLOBAL.ULTIMO_DARDO = "OUT"
+	GLOBAL.SONIDO_DARDO = "OUT"
 	GLOBAL.notificar_dardo_enviado()
 func _on_rewrite_pressed():
 	for i in range(1, 7):
