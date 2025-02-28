@@ -1,13 +1,14 @@
 extends Control
 
-GLOBAL.radar : bool = true
-GLOBAL.portaviones : int = 0
-GLOBAL.acorazado : int = 0
-GLOBAL.crucero : int = 0
-GLOBAL.destructores : int = 0
-GLOBAL.submarinos : int =0
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "HUNDIR_MENU"
+	GLOBAL.radar = true
+	GLOBAL.portaviones = 0
+	GLOBAL.acorazado = 0
+	GLOBAL.crucero = 0
+	GLOBAL.destructores = 0
+	GLOBAL.submarinos = 0
 	actualizar_pantalla()
 
 

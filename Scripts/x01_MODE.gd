@@ -1,5 +1,8 @@
 extends Control
-func _ready():
+
+
+func _ready():		
+	GLOBAL.ESCENA_ACTUAL = "X01_MENU"
 	GLOBAL.EMPEZAR_DOBLES = false
 	GLOBAL.ACABAR_DOBLES = true
 func _on_button_301_pressed():
