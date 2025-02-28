@@ -23,6 +23,7 @@ var frame_fichas_inicio_ronda = {}
 @onready var audio = $"videos/win rojo/Audio"
 
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "CONECTA_GAME"
 	preparar_fichas()
 	preparar_marcas()
 	empezar_partida()
@@ -36,27 +37,27 @@ func _process(delta):
 					
 					if fichas[i][j].global_position != destinos[i][j]:
 						mover(delta, i, j)
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("NEXTPLAYER"):
 		if timer_on == false:
 			timer_on = true
 			if $NEXT.disabled == false:
 				_on_next_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_cancel"):
+			timer_on = false
+	if Input.is_action_pressed("REWRITE"):
 		if timer_on == false:
 			timer_on = true
 			if $Rewrite.disabled == false:
 				_on_rewrite_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_focus_next"):
+			timer_on = false
+	if Input.is_action_pressed("OUT"):
 		if timer_on == false:
 			timer_on = true
 			if $Out.disabled == false:
 				_on_out_pressed()
 				await get_tree().create_timer(0.2).timeout
-				timer_on = false
+			timer_on = false
 func mover(delta, i, j):
 	var speed = 300
 	fichas[i][j].global_position = fichas[i][j].global_position.move_toward(destinos[i][j], delta * speed)
@@ -219,6 +220,7 @@ func check_dardo(texto: String, jugador):
 			else: sprite_marcas[indice].frame = marcas[indice] + 3
 	return
 func tirar_ficha(j,jugador):
+	AUDIOS.playsound("CORRECTO")
 	var fila
 	for i in range(1,7):
 		if fichas[i][j].frame == 2:#si no es 2 es que es invisible, es decir aun no se ha puesto la ficha

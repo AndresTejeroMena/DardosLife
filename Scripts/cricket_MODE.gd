@@ -1,6 +1,6 @@
 extends Control
 func _ready():
-	pass # Replace with function body.
+	GLOBAL.ESCENA_ACTUAL = "CRICKET_MENU"
 
 func _on_jugadores_1_pressed():
 	GLOBAL.NUMERO_JUGADORES = 1

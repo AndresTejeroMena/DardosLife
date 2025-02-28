@@ -80,6 +80,8 @@ func _ready():
 	
 	sound["OUT"] = preload("res://audio/optimus/OUT.ogg")
 	sound["NEXT_PLAYER"] = preload("res://audio/optimus/NEXT_PLAYER.ogg")
+	sound["CORRECTO"] = preload("res://audio/correcto.ogg")
+	sound["FALLO_BOB"] = preload("res://audio/fail_bobesponja.ogg")
 	
 	sound["PASE"] = preload("res://audio/optimus/PASE.ogg")
 	

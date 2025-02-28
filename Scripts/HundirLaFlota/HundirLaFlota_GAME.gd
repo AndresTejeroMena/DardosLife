@@ -32,6 +32,7 @@ var timer_on = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "HUNDIR_GAME"
 	init_marcas()
 	generar_barcos()
 	empezar_partida()
@@ -361,27 +362,27 @@ func check_final(equipo):
 func _on_salir_pressed():
 	get_tree().change_scene_to_file("res://Escenas/HundirLaFlota_MENU.tscn")
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("NEXTPLAYER"):
 		if timer_on == false:
 			timer_on = true
 			if $NEXT.disabled == false:
 				_on_next_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_cancel"):
+			timer_on = false
+	if Input.is_action_pressed("REWRITE"):
 		if timer_on == false:
 			timer_on = true
 			if $Rewrite.disabled == false:
 				_on_rewrite_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_focus_next"):
+			timer_on = false
+	if Input.is_action_pressed("OUT"):
 		if timer_on == false:
 			timer_on = true
 			if $Out.disabled == false:
 				_on_out_pressed()
 				await get_tree().create_timer(0.2).timeout
-				timer_on = false
+			timer_on = false
 
 
 func _on_win_animation_finished():

@@ -3,6 +3,7 @@ extends Control
 var arduino_script
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "AJUSTES"
 	actualizar_pantalla()
 	esperar_impactos()
 	arduino_script = get_node("res://arduino.cs")

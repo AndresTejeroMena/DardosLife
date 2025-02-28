@@ -11,6 +11,7 @@ var timer_on = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "X01_GAME"
 	$TextureRect.visible = false
 	$Leyenda_modo/Label_x01.text = str(GLOBAL.MODO_PUNTOS)
 	$Leyenda_modo/Label_empezar.text = str(GLOBAL.EMPEZAR_DOBLES)
@@ -21,27 +22,27 @@ func _ready():
 	actualizar_marcadores()
 	empezar_partida()
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("NEXTPLAYER"):
 		if timer_on == false:
 			timer_on = true
 			if $NEXT.disabled == false:
 				_on_next_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_cancel"):
+			timer_on = false
+	if Input.is_action_pressed("REWRITE"):
 		if timer_on == false:
 			timer_on = true
 			if $Rewrite.disabled == false:
 				_on_rewrite_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_focus_next"):
+			timer_on = false
+	if Input.is_action_pressed("OUT"):
 		if timer_on == false:
 			timer_on = true
 			if $Out.disabled == false:
 				_on_out_pressed()
 				await get_tree().create_timer(0.2).timeout
-				timer_on = false
+			timer_on = false
 func actualizar_marcadores():
 	var marcadores = [$Leyenda_jugadores/pts_centrales, $Leyenda_jugadores/ptsj1, $Leyenda_jugadores/ptsj2,
 					  $Leyenda_jugadores/ptsj3, $Leyenda_jugadores/ptsj4, $Leyenda_jugadores/ptsj5,
@@ -96,6 +97,8 @@ func empezar_partida():
 	iniciar_ronda()
 
 func iniciar_ronda():
+	$NEXT.disabled = true
+	$Rewrite.disabled = true
 	dardos[1] = "espera"
 	dardos[2] = "espera"
 	dardos[3] = "espera"
@@ -107,8 +110,6 @@ func iniciar_ronda():
 	
 
 func ronda(jugador):
-	$NEXT.disabled = true
-	$Rewrite.disabled = true
 	await GLOBAL.enviar_dardo
 	dardos[1] = GLOBAL.ULTIMO_DARDO
 	AUDIOS.playsound(GLOBAL.SONIDO_DARDO)
@@ -135,8 +136,16 @@ func ronda(jugador):
 	$Rewrite.disabled = false
 
 func check_final_ronda(jugador):
-	if ((puntos[jugador] <0)||((puntos[jugador]==1)&&GLOBAL.ACABAR_DOBLES == true)): #si te pasas
+	if((puntos[jugador]==1)&&GLOBAL.ACABAR_DOBLES == true):
+		actualizar_marcadores()
 		puntos[jugador] = puntos[jugador] + sacar_puntuacion(GLOBAL.ULTIMO_DARDO,jugador)
+		AUDIOS.playsound("NEXT_PLAYER")
+		$NEXT.disabled = false
+		$Rewrite.disabled = false
+		return true
+	if (puntos[jugador] <0): #si te pasas
+		puntos[jugador] = puntos[jugador] + sacar_puntuacion(GLOBAL.ULTIMO_DARDO,jugador)
+		actualizar_marcadores()
 		AUDIOS.playsound("NEXT_PLAYER")
 		$NEXT.disabled = false
 		$Rewrite.disabled = false
@@ -148,6 +157,7 @@ func check_final_ronda(jugador):
 			return true
 		else:
 			puntos[jugador] = puntos[jugador] + sacar_puntuacion(GLOBAL.ULTIMO_DARDO,jugador)
+			actualizar_marcadores()
 			AUDIOS.playsound("NEXT_PLAYER")
 			$NEXT.disabled = false
 			$Rewrite.disabled = false

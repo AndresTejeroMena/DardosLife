@@ -5,6 +5,7 @@ var escudo1 = GLOBAL.escudo1
 var escudo2 = GLOBAL.escudo2
 var camiseta1 = GLOBAL.camiseta1
 var camiseta2 = GLOBAL.camiseta2
+var colores = {}
 var color_local = GLOBAL.color_local
 var color_visitante = GLOBAL.color_visitante
 var jugadores1 = {}#lista con los sprites de cada jugador
@@ -56,32 +57,38 @@ var lim_rondas = GLOBAL.lim_rondas
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "FUTBOL_GAME"
+	if GLOBAL.lim_rondas_activo == true: lim_rondas = GLOBAL.lim_rondas 
+	else: lim_rondas = 1000
+	if GLOBAL.lim_goles_activo == true: lim_goles = GLOBAL.lim_goles 
+	else: lim_goles = 1000
+	asignar_colores_dorsales()
 	preparar_variables()
 	preparar_pantalla()
 	saque_de_centro(1)
 	empezar_partida()
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("NEXTPLAYER"):
 		if timer_on == false:
 			timer_on = true
 			if $NEXT.disabled == false:
 				_on_next_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_cancel"):
+			timer_on = false
+	if Input.is_action_pressed("REWRITE"):
 		if timer_on == false:
 			timer_on = true
 			if $Rewrite.disabled == false:
 				_on_rewrite_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_focus_next"):
+			timer_on = false
+	if Input.is_action_pressed("OUT"):
 		if timer_on == false:
 			timer_on = true
 			if $Out.disabled == false:
 				_on_out_pressed()
 				await get_tree().create_timer(0.2).timeout
-				timer_on = false
+			timer_on = false
 func preparar_pantalla():
 	$"jugadores/equipo1/1/numero".text = str(lista_dorsales[0])
 	$"jugadores/equipo1/2/numero".text = str(lista_dorsales[1])
@@ -156,6 +163,40 @@ func preparar_variables():
 	jugadores1[0].frame = escudo1-1 #ponemos la equipacion del portero
 	jugadores2[0].frame = escudo2-1
 	
+func asignar_colores_dorsales():
+	var blanco = Color(1,1,1)
+	var negro = Color(0,0,0)
+	var azul_oscuro = Color(0,0.05,1)#azul oscuro
+	var amarillo = Color(1,1,0)
+	var dorado = Color(0.77,0.64,0.03)
+	var rojo = Color(1,0,0)
+	var verde_oscuro = Color(0,0.62,0.05)
+	colores[0] = azul_oscuro
+	colores[1] = blanco
+	colores[4] = amarillo
+	colores[5] = amarillo
+	colores[8] = blanco
+	colores[9] = blanco
+	colores[12] = negro
+	colores[13] = blanco
+	colores[16] = blanco
+	colores[17] = azul_oscuro
+	colores[20] = negro
+	colores[21] = blanco
+	colores[24] = azul_oscuro
+	colores[25] = blanco
+	colores[28] = negro
+	colores[29] = blanco
+	colores[32] = blanco
+	colores[33] = dorado
+	colores[36] = verde_oscuro
+	colores[37] = verde_oscuro
+	colores[40] = negro
+	colores[41] = negro
+	colores[44] = azul_oscuro
+	colores[45] = amarillo
+	color_local = colores[GLOBAL.camiseta1]
+	color_visitante = colores[GLOBAL.camiseta2]
 func actualizar_pantalla():
 	$Dardos/dardo1.text = dardos[1]
 	$Dardos/dardo2.text = dardos[2]

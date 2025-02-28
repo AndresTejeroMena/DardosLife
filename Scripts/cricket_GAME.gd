@@ -12,6 +12,7 @@ var timer_on = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GLOBAL.ESCENA_ACTUAL = "CRICKET_GAME"
 	$Leyenda_modo/Label_modo.text = GLOBAL.MODO_CRICKET
 	$Leyenda_modo/Label_cut_thorat.text = str(GLOBAL.cutthroat)
 	$Leyenda_modo/Label_numerojugadores.text = str(GLOBAL.NUMERO_JUGADORES)
@@ -23,7 +24,11 @@ func _ready():
 	$CanvasLayer/Objetivos/N4.text = str(GLOBAL.objetivos_cricket[3])
 	$CanvasLayer/Objetivos/N5.text = str(GLOBAL.objetivos_cricket[4])
 	$CanvasLayer/Objetivos/N6.text = str(GLOBAL.objetivos_cricket[5])
-	
+	var marcador_interfaz = [$CanvasLayer/C/J1,$CanvasLayer/C/J1,$CanvasLayer/C/J2,$CanvasLayer/C/J3,$CanvasLayer/C/J4,$CanvasLayer/C/J5,$CanvasLayer/C/J6,$CanvasLayer/C/J7,$CanvasLayer/C/J8]
+	var marcadores_puntos = [$CanvasLayer/Pts,$CanvasLayer/Pts/J1,$CanvasLayer/Pts/J2,$CanvasLayer/Pts/J3,$CanvasLayer/Pts/J4,$CanvasLayer/Pts/J5,$CanvasLayer/Pts/J6,$CanvasLayer/Pts/J7,$CanvasLayer/Pts/J8]
+	for i in range(GLOBAL.NUMERO_JUGADORES + 1, 9):
+		marcador_interfaz[i].visible = false
+		marcadores_puntos[i].visible = false
 	for i in range(1, GLOBAL.NUMERO_JUGADORES + 1):
 		puntos[i] = 0
 	for i in range(9):
@@ -34,27 +39,27 @@ func _ready():
 	actualizar_marcadores()
 	empezar_partida()
 func _process(delta):
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("NEXTPLAYER"):
 		if timer_on == false:
 			timer_on = true
 			if $NEXT.disabled == false:
 				_on_next_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_cancel"):
+			timer_on = false
+	if Input.is_action_pressed("REWRITE"):
 		if timer_on == false:
 			timer_on = true
 			if $Rewrite.disabled == false:
 				_on_rewrite_pressed()
 				await get_tree().create_timer(0.5).timeout
-				timer_on = false
-	if Input.is_action_pressed("ui_focus_next"):
+			timer_on = false
+	if Input.is_action_pressed("OUT"):
 		if timer_on == false:
 			timer_on = true
 			if $Out.disabled == false:
 				_on_out_pressed()
 				await get_tree().create_timer(0.2).timeout
-				timer_on = false
+			timer_on = false
 func actualizar_marcadores():
 	$Leyenda_modo/Label_RondaActual.text = str(ronda_actual)
 	$Leyenda_modo/Turno_jugador.text = str(jugador_actual)
@@ -69,7 +74,7 @@ func actualizar_marcadores():
 			marcadores_puntos[i].text = str(puntos[i])
 	actualizar_marcas()
 func actualizar_marcas():
-	var imag_marcas = [[$CanvasLayer/J1/N1,$CanvasLayer/J1/N2,$CanvasLayer/J1/N3,$CanvasLayer/J1/N4,$CanvasLayer/J1/N5,$CanvasLayer/J1/N6,$CanvasLayer/J1/N7],[$CanvasLayer/J2/N1,$CanvasLayer/J2/N2,$CanvasLayer/J2/N3,$CanvasLayer/J2/N4,$CanvasLayer/J2/N5,$CanvasLayer/J2/N6,$CanvasLayer/J2/N7],[$CanvasLayer/J3/N1,$CanvasLayer/J3/N2,$CanvasLayer/J3/N3,$CanvasLayer/J3/N4,$CanvasLayer/J3/N5,$CanvasLayer/J3/N6,$CanvasLayer/J3/N7],[$CanvasLayer/J4/N1,$CanvasLayer/J4/N2,$CanvasLayer/J4/N3,$CanvasLayer/J4/N4,$CanvasLayer/J4/N5,$CanvasLayer/J4/N6,$CanvasLayer/J4/N7],[$CanvasLayer/J5/N1,$CanvasLayer/J5/N2,$CanvasLayer/J5/N3,$CanvasLayer/J5/N4,$CanvasLayer/J5/N5,$CanvasLayer/J5/N6,$CanvasLayer/J5/N7],[$CanvasLayer/J6/N1,$CanvasLayer/J6/N2,$CanvasLayer/J6/N3,$CanvasLayer/J6/N4,$CanvasLayer/J6/N5,$CanvasLayer/J6/N6,$CanvasLayer/J6/N7],[$CanvasLayer/J7/N1,$CanvasLayer/J7/N2,$CanvasLayer/J7/N3,$CanvasLayer/J7/N4,$CanvasLayer/J7/N5,$CanvasLayer/J7/N6,$CanvasLayer/J7/N7],[$CanvasLayer/J8/N1,$CanvasLayer/J8/N2,$CanvasLayer/J8/N3,$CanvasLayer/J8/N4,$CanvasLayer/J8/N5,$CanvasLayer/J8/N6,$CanvasLayer/J8/N7]]
+	var imag_marcas = [[$CanvasLayer/C/J1/N1,$CanvasLayer/C/J1/N2,$CanvasLayer/C/J1/N3,$CanvasLayer/C/J1/N4,$CanvasLayer/C/J1/N5,$CanvasLayer/C/J1/N6,$CanvasLayer/C/J1/N7],[$CanvasLayer/C/J2/N1,$CanvasLayer/C/J2/N2,$CanvasLayer/C/J2/N3,$CanvasLayer/C/J2/N4,$CanvasLayer/C/J2/N5,$CanvasLayer/C/J2/N6,$CanvasLayer/C/J2/N7],[$CanvasLayer/C/J3/N1,$CanvasLayer/C/J3/N2,$CanvasLayer/C/J3/N3,$CanvasLayer/C/J3/N4,$CanvasLayer/C/J3/N5,$CanvasLayer/C/J3/N6,$CanvasLayer/C/J3/N7],[$CanvasLayer/C/J4/N1,$CanvasLayer/C/J4/N2,$CanvasLayer/C/J4/N3,$CanvasLayer/C/J4/N4,$CanvasLayer/C/J4/N5,$CanvasLayer/C/J4/N6,$CanvasLayer/C/J4/N7],[$CanvasLayer/C/J5/N1,$CanvasLayer/C/J5/N2,$CanvasLayer/C/J5/N3,$CanvasLayer/C/J5/N4,$CanvasLayer/C/J5/N5,$CanvasLayer/C/J5/N6,$CanvasLayer/C/J5/N7],[$CanvasLayer/C/J6/N1,$CanvasLayer/C/J6/N2,$CanvasLayer/C/J6/N3,$CanvasLayer/C/J6/N4,$CanvasLayer/C/J6/N5,$CanvasLayer/C/J6/N6,$CanvasLayer/C/J6/N7],[$CanvasLayer/C/J7/N1,$CanvasLayer/C/J7/N2,$CanvasLayer/C/J7/N3,$CanvasLayer/C/J7/N4,$CanvasLayer/C/J7/N5,$CanvasLayer/C/J7/N6,$CanvasLayer/C/J7/N7],[$CanvasLayer/C/J8/N1,$CanvasLayer/C/J8/N2,$CanvasLayer/C/J8/N3,$CanvasLayer/C/J8/N4,$CanvasLayer/C/J8/N5,$CanvasLayer/C/J8/N6,$CanvasLayer/C/J8/N7]]
 	for i in range(9):
 		for j in range(7):
 			imag_marcas[i-1][j].frame = marcas[i][j]
@@ -86,7 +91,7 @@ func iniciar_ronda():
 	actualizar_marcadores()
 	puntos_inicio_ronda = puntos.duplicate()
 	marcas_inicio_ronda = deep_duplicate(marcas)
-	print(marcas_inicio_ronda)
+	#print(marcas_inicio_ronda)
 	ronda(jugador_actual)
 	AUDIOS.playsound("J"+str(jugador_actual))
 
@@ -138,8 +143,15 @@ func check_dardo(texto: String, jugador):
 					sumar_marcas = 2
 				"T":
 					sumar_marcas = 3
+					
+			var habia_cerrado = true
+			if marcas[jugador][indice] != 3: habia_cerrado =false
+			
 			marcas[jugador][indice] += sumar_marcas
+			if marcas[jugador][indice] == 3: AUDIOS.playsound("CORRECTO")
+			
 			if marcas[jugador][indice]>3:
+				if habia_cerrado == false: AUDIOS.playsound("CORRECTO")
 				sumador = ((marcas[jugador][indice] - 3)*GLOBAL.objetivos_cricket[indice])
 				marcas[jugador][indice] = 3
 				if GLOBAL.cutthroat == true:
