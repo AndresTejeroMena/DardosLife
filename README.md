@@ -18,7 +18,7 @@ To do this, I designed a PCB with EAGLE and had it manufactured.
 
 The Arduino program performs a loop of signal scanning through the 7-pin sheet and waits for the arrival of current through the 10-pin sheet. When one of those 10 pins detects the HIGH signal, it checks from which pin the signal was sent and to which pin it was received. Based on a predefined matrix, we know where the dart has impacted. All that's left is to send it via serial. Depending on the dartboard model, this matrix will vary, so I've created two different Arduino programs for two different dartboards.
 
-At this point, we already have a dartboard capable of sending information to the computer. To program the games, I used GODOT, a very intuitive and easy-to-learn tool. In less than a month, I went from not knowing about GODOT's existence to having programmed 5 games. The only thing needed for it to work is to use a C# script to read the serial port and send that information to GODOT, where I programmed all the games in its GDScript language.
+At this point, we already have a dartboard capable of sending information to the computer. To program the games, I used GODOT, a very intuitive and easy-to-learn tool. In less than a month, I went from not knowing about GODOT's existence to having programmed 7 games. The only thing needed for it to work is to use a C# script to read the serial port and send that information to GODOT, where I programmed all the games in its GDScript language.
 
 This has been a very enjoyable project that I wanted to share with you. The goal was always to challenge myself and learn; there were never any commercial purposes involved.
 ## What I've used:
