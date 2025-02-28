@@ -447,615 +447,78 @@ theme_override_font_sizes/font_size = 80
 text = "BULL"
 horizontal_alignment = 1
 
-[node name="J1" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 150.0
-offset_right = 554.0
-offset_bottom = 235.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J1"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J1"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J2" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 250.0
-offset_right = 550.0
-offset_bottom = 333.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J2"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J2"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J3" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 350.0
-offset_right = 548.0
-offset_bottom = 433.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J3"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J3"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J4" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 450.0
-offset_right = 546.0
-offset_bottom = 533.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J4"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J4"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J5" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 550.0
-offset_right = 546.0
-offset_bottom = 633.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J5"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J5"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J6" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 650.0
-offset_right = 546.0
-offset_bottom = 733.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J6"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(360, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(510, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(660, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(810, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(960, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(1110, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J6"]
-position = Vector2(1280, 45)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J7" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 850.0
-offset_right = 546.0
-offset_bottom = 933.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J8"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(360, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(510, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(660, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(810, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(960, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(1110, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J7"]
-position = Vector2(1280, -50)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="J8" type="Label" parent="CanvasLayer"]
-offset_left = 320.0
-offset_top = 750.0
-offset_right = 546.0
-offset_bottom = 833.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "J7"
-horizontal_alignment = 2
-
-[node name="N1" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(360, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N2" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(510, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N3" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(660, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N4" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(810, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N5" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(960, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N6" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(1110, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="N7" type="Sprite2D" parent="CanvasLayer/J8"]
-position = Vector2(1280, 145)
-scale = Vector2(0.6, 0.692)
-texture = ExtResource("1_usn6f")
-hframes = 4
-frame = 3
-
-[node name="Pts" type="Label" parent="CanvasLayer"]
+[node name="Pts" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = -1
-anchor_left = 0.905
-anchor_top = 0.057
-anchor_right = 0.943
-anchor_bottom = 0.104
-offset_left = 6.40002
-offset_top = -9.56
-offset_right = 23.4399
-offset_bottom = 22.68
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
-text = "Pts"
+anchor_left = 0.924
+anchor_top = 0.114
+anchor_right = 0.945
+anchor_bottom = 0.114
+offset_left = -68.0801
+offset_top = 24.88
+offset_right = 28.5999
+offset_bottom = 782.88
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="J1" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = -25.516
-offset_right = -13.575
-offset_bottom = -25.385
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J2" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 74.484
-offset_right = -13.575
-offset_bottom = 81.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J3" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 174.484
-offset_right = -13.575
-offset_bottom = 181.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J4" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 274.484
-offset_right = -13.575
-offset_bottom = 281.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J5" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 374.484
-offset_right = -13.575
-offset_bottom = 381.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J6" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 474.484
-offset_right = -13.575
-offset_bottom = 481.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J7" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 574.484
-offset_right = -13.575
-offset_bottom = 581.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
 horizontal_alignment = 1
 
 [node name="J8" type="Label" parent="CanvasLayer/Pts"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.333
-anchor_top = 1.452
-anchor_right = 1.568
-anchor_bottom = 2.595
-offset_left = -20.03
-offset_top = 674.484
-offset_right = -13.575
-offset_bottom = 681.478
+layout_mode = 2
+size_flags_vertical = 11
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "0000"
@@ -1072,6 +535,462 @@ frame_progress = 1.0
 
 [node name="Audio" type="AudioStreamPlayer2D" parent="CanvasLayer/videos/win"]
 stream = ExtResource("6_drth7")
+
+[node name="C" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 486.0
+offset_top = 142.0
+offset_right = 1719.0
+offset_bottom = 872.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="J1" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J1"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J1"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J2" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J2"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J2"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J3" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J3"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J3"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J4" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J4"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J4"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J5" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J5"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J5"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J6" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J6"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(197, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(347, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(497, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(647, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(797, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(947, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J6"]
+position = Vector2(1117, 53.52)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J7" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J7"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(195.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(345.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(495.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(645.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(795.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(945.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J7"]
+position = Vector2(1115.1, 50.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="J8" type="Label" parent="CanvasLayer/C"]
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "J8"
+
+[node name="N1" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(197.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N2" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(347.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N3" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(497.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N4" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(647.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N5" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(797.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N6" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(947.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
+
+[node name="N7" type="Sprite2D" parent="CanvasLayer/C/J8"]
+position = Vector2(1117.1, 56.04)
+scale = Vector2(0.6, 0.692)
+texture = ExtResource("1_usn6f")
+hframes = 4
+frame = 3
 
 [node name="Out" type="Button" parent="."]
 layout_mode = 0
@@ -1105,6 +1024,16 @@ theme_override_colors/font_hover_color = Color(0.866667, 0.545098, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "NEXT >>"
 flat = true
+
+[node name="PTS" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1730.0
+offset_top = 39.0
+offset_right = 1851.0
+offset_bottom = 186.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 76
+text = "Pts"
 
 [node name="Leyenda_modo" type="Label" parent="."]
 layout_mode = 0

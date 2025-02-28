@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://3gntixdkl1b6"]
+[gd_scene load_steps=4 format=3 uid="uid://3gntixdkl1b6"]
 
 [ext_resource type="Script" path="res://Scripts/x01_MODE.gd" id="1_4gwc5"]
 [ext_resource type="Texture2D" uid="uid://bq2s3ms4hnox0" path="res://image/Fondos/x01_menu.png" id="2_jbure"]
+[ext_resource type="Script" path="res://Scripts/Botones/Button 301.gd" id="3_8mfay"]
 
 [node name="X01Mode" type="Control"]
 layout_mode = 3
@@ -18,7 +19,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_jbure")
 
-[node name="VBoxModo" type="GridContainer" parent="."]
+[node name="VBoxContainer" type="GridContainer" parent="."]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -32,7 +33,7 @@ grow_horizontal = 2
 grow_vertical = 2
 columns = 4
 
-[node name="Button 301" type="Button" parent="VBoxModo"]
+[node name="Button 301" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -41,8 +42,9 @@ theme_override_font_sizes/font_size = 50
 action_mode = 0
 text = "301"
 flat = true
+script = ExtResource("3_8mfay")
 
-[node name="Button 401" type="Button" parent="VBoxModo"]
+[node name="Button 401" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -52,7 +54,7 @@ action_mode = 0
 text = "401"
 flat = true
 
-[node name="Button 501" type="Button" parent="VBoxModo"]
+[node name="Button 501" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -62,7 +64,7 @@ action_mode = 0
 text = "501"
 flat = true
 
-[node name="Button 601" type="Button" parent="VBoxModo"]
+[node name="Button 601" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -72,7 +74,7 @@ action_mode = 0
 text = "601"
 flat = true
 
-[node name="Button 701" type="Button" parent="VBoxModo"]
+[node name="Button 701" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -82,7 +84,7 @@ action_mode = 0
 text = "701"
 flat = true
 
-[node name="Button 802" type="Button" parent="VBoxModo"]
+[node name="Button 802" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -92,7 +94,7 @@ action_mode = 0
 text = "801"
 flat = true
 
-[node name="Button 903" type="Button" parent="VBoxModo"]
+[node name="Button 903" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -237,13 +239,13 @@ theme_override_font_sizes/font_size = 80
 text = "8"
 flat = true
 
-[connection signal="pressed" from="VBoxModo/Button 301" to="." method="_on_button_301_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 401" to="." method="_on_button_401_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 501" to="." method="_on_button_501_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 601" to="." method="_on_button_601_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 701" to="." method="_on_button_701_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 802" to="." method="_on_button_802_pressed"]
-[connection signal="pressed" from="VBoxModo/Button 903" to="." method="_on_button_903_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 301" to="." method="_on_button_301_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 401" to="." method="_on_button_401_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 501" to="." method="_on_button_501_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 601" to="." method="_on_button_601_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 701" to="." method="_on_button_701_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 802" to="." method="_on_button_802_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button 903" to="." method="_on_button_903_pressed"]
 [connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
 [connection signal="toggled" from="ActivarDobles" to="." method="_on_activar_dobles_toggled"]

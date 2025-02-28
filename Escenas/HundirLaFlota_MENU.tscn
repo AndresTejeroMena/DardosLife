@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://djamoldhaspw1"]
+[gd_scene load_steps=15 format=3 uid="uid://djamoldhaspw1"]
 
 [ext_resource type="Script" path="res://Scripts/HundirLaFlota/HundirLaFlota_MENU.gd" id="1_bkhun"]
 [ext_resource type="Texture2D" uid="uid://c2b8dul8vaa61" path="res://image/HundirLaFlota/submarino.png" id="2_1r1fu"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://biqgxmbb5dobr" path="res://image/HundirLaFlota/acorazado.jpg" id="5_tjwpv"]
 [ext_resource type="Texture2D" uid="uid://6kbbulp1bqet" path="res://image/HundirLaFlota/portaviones.jpg" id="6_k0iii"]
 [ext_resource type="Texture2D" uid="uid://e3uh4mi1gchj" path="res://image/HundirLaFlota/crucero.png" id="6_l7ogf"]
+[ext_resource type="Script" path="res://Scripts/Botones/buttonHUNDIR.gd" id="7_fmtis"]
 [ext_resource type="Texture2D" uid="uid://b1cgokcva0ksk" path="res://image/HundirLaFlota/radar.jpg" id="7_hr0y8"]
 [ext_resource type="Texture2D" uid="uid://c7rt2ic758037" path="res://image/HundirLaFlota/acorazado.png" id="8_65y71"]
 [ext_resource type="Texture2D" uid="uid://det3o4x0qfe7m" path="res://image/HundirLaFlota/portaviones.png" id="10_j5q25"]
@@ -114,6 +115,7 @@ layout_mode = 2
 theme_override_colors/font_hover_color = Color(0, 0.635294, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "   -   "
+script = ExtResource("7_fmtis")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BARCOS/Destructor/Ajustes"]
 layout_mode = 2

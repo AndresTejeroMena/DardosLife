@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cpodwby4dwnh4" path="res://Video/Football/disparo.png" id="10_wxejd"]
 [ext_resource type="AudioStream" uid="uid://ccst3sex5sup7" path="res://Video/Football/parada.ogg" id="10_yb31n"]
 [ext_resource type="Texture2D" uid="uid://ni5l1mwuvf7l" path="res://Video/Football/END.png" id="11_gl7xw"]
-[ext_resource type="AudioStream" uid="uid://5vyrqg8y1fxr" path="res://Video/Football/gol.ogg" id="12_70p7e"]
+[ext_resource type="AudioStream" uid="uid://dskcg618qt1nh" path="res://Video/Football/gol.ogg" id="12_70p7e"]
 [ext_resource type="AudioStream" uid="uid://iwgucvk1jt6u" path="res://Video/Football/disparo.ogg" id="14_4twec"]
 [ext_resource type="AudioStream" uid="uid://cnm0qjrosiv0" path="res://Video/Football/end.ogg" id="16_pan46"]
 
@@ -2232,7 +2232,7 @@ position = Vector2(314, 541)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 2
 
 [node name="numero" type="Label" parent="jugadores/equipo1/1"]
@@ -2264,7 +2264,7 @@ position = Vector2(480, 857)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/2"]
 anchors_preset = -1
@@ -2296,7 +2296,7 @@ position = Vector2(482, 655)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/3"]
 anchors_preset = -1
@@ -2328,7 +2328,7 @@ position = Vector2(484, 421)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/4"]
 anchors_preset = -1
@@ -2360,7 +2360,7 @@ position = Vector2(484, 211)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/5"]
 anchors_preset = -1
@@ -2392,7 +2392,7 @@ position = Vector2(864, 773)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/6"]
 anchors_preset = -1
@@ -2424,7 +2424,7 @@ position = Vector2(866, 539)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/7"]
 anchors_preset = -1
@@ -2456,7 +2456,7 @@ position = Vector2(866, 326)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/8"]
 anchors_preset = -1
@@ -2488,7 +2488,7 @@ position = Vector2(1246, 779)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/9"]
 anchors_preset = -1
@@ -2520,7 +2520,7 @@ position = Vector2(1248, 545)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/10"]
 anchors_preset = -1
@@ -2552,7 +2552,7 @@ position = Vector2(1248, 335)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name="numero" type="Label" parent="jugadores/equipo1/11"]
 anchors_preset = -1
@@ -2586,7 +2586,7 @@ position = Vector2(1591, 550)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 6
 
 [node name="numero" type="Label" parent="jugadores/equipo2/1"]
@@ -2619,7 +2619,7 @@ position = Vector2(1441, 868)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/2"]
@@ -2652,7 +2652,7 @@ position = Vector2(1443, 666)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/3"]
@@ -2685,7 +2685,7 @@ position = Vector2(1445, 432)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/4"]
@@ -2718,7 +2718,7 @@ position = Vector2(1445, 222)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/5"]
@@ -2751,7 +2751,7 @@ position = Vector2(1037, 768)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/6"]
@@ -2784,7 +2784,7 @@ position = Vector2(1039, 534)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/7"]
@@ -2817,7 +2817,7 @@ position = Vector2(1039, 321)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/8"]
@@ -2850,7 +2850,7 @@ position = Vector2(663, 771)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/9"]
@@ -2883,7 +2883,7 @@ position = Vector2(665, 537)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/10"]
@@ -2916,7 +2916,7 @@ position = Vector2(665, 327)
 scale = Vector2(0.277813, 0.27375)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 4
 
 [node name="numero" type="Label" parent="jugadores/equipo2/11"]
@@ -3047,7 +3047,7 @@ position = Vector2(-136, 61)
 scale = Vector2(0.245, 0.245)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 3
 
 [node name="esc2" type="Sprite2D" parent="Marcador"]
@@ -3055,7 +3055,7 @@ position = Vector2(280, 62)
 scale = Vector2(0.245, 0.245)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 3
 
 [node name="Out" type="Button" parent="."]
@@ -3116,58 +3116,6 @@ texture = ExtResource("6_6hppb")
 hframes = 3
 frame = 2
 
-[node name="Videos" type="Node" parent="."]
-
-[node name="arbitro" type="AnimatedSprite2D" parent="Videos"]
-visible = false
-position = Vector2(745, 649)
-rotation = 1.5708
-scale = Vector2(0.538437, 0.538438)
-sprite_frames = SubResource("SpriteFrames_0vwrq")
-frame = 19
-frame_progress = 1.0
-
-[node name="Audioarb" type="AudioStreamPlayer2D" parent="Videos/arbitro"]
-stream = ExtResource("8_irjgr")
-
-[node name="parada" type="AnimatedSprite2D" parent="Videos"]
-visible = false
-position = Vector2(960, 544)
-sprite_frames = SubResource("SpriteFrames_rgkxo")
-frame = 60
-frame_progress = 1.0
-
-[node name="Audiopar" type="AudioStreamPlayer2D" parent="Videos/parada"]
-stream = ExtResource("10_yb31n")
-
-[node name="gol" type="AnimatedSprite2D" parent="Videos"]
-visible = false
-position = Vector2(960, 544)
-sprite_frames = SubResource("SpriteFrames_esngg")
-frame = 74
-frame_progress = 1.0
-
-[node name="Audiogol" type="AudioStreamPlayer2D" parent="Videos/gol"]
-stream = ExtResource("12_70p7e")
-
-[node name="tiro" type="AnimatedSprite2D" parent="Videos"]
-visible = false
-position = Vector2(960, 544)
-sprite_frames = SubResource("SpriteFrames_l0kk6")
-
-[node name="Audiotir" type="AudioStreamPlayer2D" parent="Videos/tiro"]
-stream = ExtResource("14_4twec")
-
-[node name="end" type="AnimatedSprite2D" parent="Videos"]
-visible = false
-position = Vector2(960, 544)
-sprite_frames = SubResource("SpriteFrames_gsexg")
-frame = 74
-frame_progress = 1.0
-
-[node name="Audioend" type="AudioStreamPlayer2D" parent="Videos/end"]
-stream = ExtResource("16_pan46")
-
 [node name="Ronda" type="Label" parent="."]
 layout_mode = 0
 offset_left = 259.0
@@ -3220,8 +3168,60 @@ position = Vector2(284, 1031)
 scale = Vector2(0.23, 0.22)
 texture = ExtResource("2_2q1k8")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 3
+
+[node name="Videos" type="Node" parent="."]
+
+[node name="arbitro" type="AnimatedSprite2D" parent="Videos"]
+visible = false
+position = Vector2(745, 649)
+rotation = 1.5708
+scale = Vector2(0.538437, 0.538438)
+sprite_frames = SubResource("SpriteFrames_0vwrq")
+frame = 19
+frame_progress = 1.0
+
+[node name="Audioarb" type="AudioStreamPlayer2D" parent="Videos/arbitro"]
+stream = ExtResource("8_irjgr")
+
+[node name="parada" type="AnimatedSprite2D" parent="Videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_rgkxo")
+frame = 60
+frame_progress = 1.0
+
+[node name="Audiopar" type="AudioStreamPlayer2D" parent="Videos/parada"]
+stream = ExtResource("10_yb31n")
+
+[node name="gol" type="AnimatedSprite2D" parent="Videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_esngg")
+frame = 74
+frame_progress = 1.0
+
+[node name="Audiogol" type="AudioStreamPlayer2D" parent="Videos/gol"]
+stream = ExtResource("12_70p7e")
+
+[node name="tiro" type="AnimatedSprite2D" parent="Videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_l0kk6")
+
+[node name="Audiotir" type="AudioStreamPlayer2D" parent="Videos/tiro"]
+stream = ExtResource("14_4twec")
+
+[node name="end" type="AnimatedSprite2D" parent="Videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_gsexg")
+frame = 74
+frame_progress = 1.0
+
+[node name="Audioend" type="AudioStreamPlayer2D" parent="Videos/end"]
+stream = ExtResource("16_pan46")
 
 [connection signal="pressed" from="Out" to="." method="_on_out_pressed"]
 [connection signal="pressed" from="Rewrite" to="." method="_on_rewrite_pressed"]

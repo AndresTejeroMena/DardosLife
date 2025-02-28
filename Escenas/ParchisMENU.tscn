@@ -1,0 +1,223 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqf3dwqpsxteh"]
+
+[ext_resource type="Script" path="res://Scripts/Parchis/ParchisMENU.gd" id="1_sc1q2"]
+[ext_resource type="Texture2D" uid="uid://dxe1j1oiun11d" path="res://image/Fondos/Parchis_menu.png" id="2_r6v7t"]
+[ext_resource type="Script" path="res://Scripts/Botones/ButtonParchis.gd" id="3_0kwyo"]
+[ext_resource type="Script" path="res://Scripts/Botones/Cricket333.gd" id="3_cmwqq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sc1q2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_r6v7t")
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -232.0
+offset_top = -111.0
+offset_right = -52.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.768627, 0.576471, 0.137255, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 18.12
+offset_top = 51.08
+offset_right = 17.64
+offset_bottom = -2.04004
+theme_override_colors/font_hover_color = Color(0.768627, 0.576471, 0.137255, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="NumeroJugadores" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -474.0
+offset_top = 652.0
+offset_right = 443.0
+offset_bottom = -197.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="1" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "1"
+flat = true
+script = ExtResource("3_0kwyo")
+
+[node name="2" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "2"
+flat = true
+
+[node name="3" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "3"
+flat = true
+
+[node name="4" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "4"
+flat = true
+
+[node name="5" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "5"
+flat = true
+
+[node name="6" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "6"
+flat = true
+
+[node name="7" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "7"
+flat = true
+
+[node name="8" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 130
+text = "8"
+flat = true
+
+[node name="Objetivo" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -658.0
+offset_top = 476.0
+offset_right = 641.0
+offset_bottom = -477.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="333" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "333"
+flat = true
+script = ExtResource("3_cmwqq")
+
+[node name="444" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "444"
+flat = true
+
+[node name="555" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "555"
+flat = true
+
+[node name="666" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "666"
+flat = true
+
+[node name="777" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "777"
+flat = true
+
+[node name="888" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "888"
+flat = true
+
+[node name="999" type="Button" parent="Objetivo"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "999"
+flat = true
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="NumeroJugadores/1" to="." method="_on__pressed1"]
+[connection signal="pressed" from="NumeroJugadores/2" to="." method="_on__pressed2"]
+[connection signal="pressed" from="NumeroJugadores/3" to="." method="_on__pressed3"]
+[connection signal="pressed" from="NumeroJugadores/4" to="." method="_on__pressed4"]
+[connection signal="pressed" from="NumeroJugadores/5" to="." method="_on__pressed5"]
+[connection signal="pressed" from="NumeroJugadores/6" to="." method="_on__pressed6"]
+[connection signal="pressed" from="NumeroJugadores/7" to="." method="_on__pressed7"]
+[connection signal="pressed" from="NumeroJugadores/8" to="." method="_on__pressed8"]
+[connection signal="pressed" from="Objetivo/333" to="." method="_on__pressed333"]
+[connection signal="pressed" from="Objetivo/444" to="." method="_on__pressed444"]
+[connection signal="pressed" from="Objetivo/555" to="." method="_on__pressed555"]
+[connection signal="pressed" from="Objetivo/666" to="." method="_on__pressed666"]
+[connection signal="pressed" from="Objetivo/777" to="." method="_on__pressed777"]
+[connection signal="pressed" from="Objetivo/888" to="." method="_on__pressed888"]
+[connection signal="pressed" from="Objetivo/999" to="." method="_on__pressed999"]

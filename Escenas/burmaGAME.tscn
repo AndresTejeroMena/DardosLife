@@ -1,0 +1,620 @@
+[gd_scene load_steps=47 format=3 uid="uid://imo7bttmg0bx"]
+
+[ext_resource type="Script" path="res://Scripts/Burma Road/burmaGAME.gd" id="1_sc5ny"]
+[ext_resource type="Texture2D" uid="uid://cnufia23fcthe" path="res://image/dardo.png" id="2_blbda"]
+[ext_resource type="Texture2D" uid="uid://cfl8swilwhv1i" path="res://image/Fondos/BurmaRoad_game.png" id="2_ye3n8"]
+[ext_resource type="Texture2D" uid="uid://btepwsjtwoq03" path="res://Video/win_rojo.png" id="4_wps8i"]
+[ext_resource type="AudioStream" uid="uid://ijctrgg4ehw7" path="res://Video/win.ogg" id="5_wa0vi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qndgg"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(0, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ls5em"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(1920, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8val5"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(3840, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syvb7"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(5760, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28i66"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(7680, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uv47q"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(9600, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwo6p"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(11520, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgjw8"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(13440, 0, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2x1y"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(0, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om04x"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(1920, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkpfg"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(3840, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq7gk"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(5760, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66qjp"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(7680, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubmfr"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(9600, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqwce"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(11520, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1il2"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(13440, 1088, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjnx0"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(0, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47uq7"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(1920, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hg7s5"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(3840, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aox3y"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(5760, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j84cf"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(7680, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6r8s"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(9600, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7u5ig"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(11520, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7a4h"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(13440, 2176, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2m0g"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(0, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_so5h1"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(1920, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oc5bu"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(3840, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6its3"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(5760, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i61op"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(7680, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1mbk"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(9600, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_roba8"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(11520, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_na6hc"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(13440, 3264, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hulcn"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(0, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n7wq"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(1920, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7jtj"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(3840, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3kbm"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(5760, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y851s"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(7680, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rixk"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(9600, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0mhu"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(11520, 4352, 1920, 1088)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j51gx"]
+atlas = ExtResource("4_wps8i")
+region = Rect2(13440, 4352, 1920, 1088)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ufr1i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qndgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ls5em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8val5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syvb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28i66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uv47q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwo6p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgjw8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f2x1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om04x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkpfg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq7gk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66qjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubmfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dqwce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1il2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjnx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47uq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hg7s5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aox3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j84cf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6r8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7u5ig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7a4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2m0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_so5h1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oc5bu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6its3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i61op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1mbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roba8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_na6hc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hulcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n7wq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7jtj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3kbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y851s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rixk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0mhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j51gx")
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sc5ny")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_ye3n8")
+
+[node name="Dardos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 992.0
+offset_right = 1584.0
+offset_bottom = 1064.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+
+[node name="dardo1" type="Label" parent="Dardos"]
+layout_mode = 0
+offset_left = 220.0
+offset_top = -3.0
+offset_right = 403.0
+offset_bottom = 66.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "espera"
+
+[node name="dardo2" type="Label" parent="Dardos"]
+layout_mode = 0
+offset_left = 634.0
+offset_top = -1.0
+offset_right = 817.0
+offset_bottom = 68.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "espera"
+
+[node name="dardo3" type="Label" parent="Dardos"]
+layout_mode = 0
+offset_left = 1049.0
+offset_top = -2.0
+offset_right = 1232.0
+offset_bottom = 67.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "espera"
+
+[node name="im1" type="TextureRect" parent="Dardos"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 8.0
+offset_right = 204.0
+offset_bottom = 67.0
+texture = ExtResource("2_blbda")
+expand_mode = 1
+
+[node name="im2" type="TextureRect" parent="Dardos"]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 5.0
+offset_right = 629.0
+offset_bottom = 65.0
+texture = ExtResource("2_blbda")
+expand_mode = 1
+
+[node name="im3" type="TextureRect" parent="Dardos"]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 7.0
+offset_right = 1040.0
+offset_bottom = 67.0
+texture = ExtResource("2_blbda")
+expand_mode = 1
+
+[node name="Out" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 879.0
+offset_right = 228.0
+offset_bottom = 949.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "OUT >>"
+flat = true
+
+[node name="Rewrite" type="Button" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 963.0
+offset_right = 228.0
+offset_bottom = 1033.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "REWRITE"
+flat = true
+
+[node name="NEXT" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1690.0
+offset_top = 957.0
+offset_right = 1870.0
+offset_bottom = 1027.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "NEXT >>"
+flat = true
+
+[node name="SALIR" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -43.0
+offset_bottom = 50.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 30
+text = "X"
+
+[node name="Marcadores" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 197.0
+offset_right = 1868.0
+offset_bottom = 528.0
+
+[node name="J1" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 1"
+horizontal_alignment = 1
+
+[node name="J2" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 2"
+horizontal_alignment = 1
+
+[node name="J3" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 3"
+horizontal_alignment = 1
+
+[node name="J4" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 4"
+horizontal_alignment = 1
+
+[node name="J5" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 5"
+horizontal_alignment = 1
+
+[node name="J6" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J6"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J6"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 6"
+horizontal_alignment = 1
+
+[node name="J7" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J7"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J7"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 7"
+horizontal_alignment = 1
+
+[node name="J8" type="VBoxContainer" parent="Marcadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pts" type="Label" parent="Marcadores/J8"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 120
+text = "000"
+horizontal_alignment = 1
+
+[node name="nombre" type="Label" parent="Marcadores/J8"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Jugador 8"
+horizontal_alignment = 1
+
+[node name="TurnoText" type="Label" parent="."]
+layout_mode = 2
+offset_left = 489.0
+offset_top = 56.0
+offset_right = 1407.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 66
+text = "Turno: Jugador 1"
+horizontal_alignment = 1
+
+[node name="TxtGanador" type="Label" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 489.0
+offset_top = 854.0
+offset_right = 1407.0
+offset_bottom = 945.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+text = "Ganador  Jugador 1!"
+horizontal_alignment = 1
+
+[node name="Objetivo" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -236.0
+offset_top = 548.0
+offset_right = 235.0
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="txt" type="Label" parent="Objetivo"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.678431, 0, 0, 1)
+theme_override_font_sizes/font_size = 261
+text = "000"
+horizontal_alignment = 1
+
+[node name="videos" type="Node" parent="."]
+
+[node name="win" type="AnimatedSprite2D" parent="videos"]
+visible = false
+position = Vector2(960, 544)
+sprite_frames = SubResource("SpriteFrames_ufr1i")
+frame = 39
+frame_progress = 1.0
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="videos/win"]
+stream = ExtResource("5_wa0vi")
+
+[connection signal="pressed" from="Out" to="." method="_on_out_pressed"]
+[connection signal="pressed" from="Rewrite" to="." method="_on_rewrite_pressed"]
+[connection signal="pressed" from="NEXT" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="SALIR" to="." method="_on_salir_pressed"]
+[connection signal="animation_finished" from="videos/win" to="." method="_on_win_animation_finished"]

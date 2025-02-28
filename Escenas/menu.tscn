@@ -1,13 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://6303yig5cv1s"]
+[gd_scene load_steps=12 format=3 uid="uid://6303yig5cv1s"]
 
 [ext_resource type="Script" path="res://Scripts/control.gd" id="1_mrgwv"]
 [ext_resource type="Texture2D" uid="uid://csemen0a64jwh" path="res://image/ModosDeJuego/x01.jpg" id="2_e8d0f"]
 [ext_resource type="Texture2D" uid="uid://wkyq52olq74v" path="res://image/Fondos/menu.png" id="2_nnnhi"]
+[ext_resource type="Script" path="res://Control/ControlMenu.gd" id="3_qhh2l"]
 [ext_resource type="Texture2D" uid="uid://fvbfujm36hn8" path="res://image/ModosDeJuego/Cricket.jpg" id="3_wp2ej"]
 [ext_resource type="Texture2D" uid="uid://bhuiq325ac33s" path="res://image/ModosDeJuego/HundirLaFlota.jpg" id="4_3jqoi"]
 [ext_resource type="Texture2D" uid="uid://dkrw857wln5ag" path="res://image/ModosDeJuego/Connect4.jpg" id="5_ia6mq"]
 [ext_resource type="Texture2D" uid="uid://cgrnlspdejn6i" path="res://image/ModosDeJuego/Football.jpg" id="6_ufd63"]
 [ext_resource type="Texture2D" uid="uid://c7plip34wo0ln" path="res://image/ajustes.png" id="8_6wceh"]
+[ext_resource type="Texture2D" uid="uid://lq0dxrxnlgwr" path="res://image/ModosDeJuego/Parchis.jpeg" id="9_h6sub"]
+[ext_resource type="Texture2D" uid="uid://bwwnynyvastao" path="res://image/ModosDeJuego/BurmaRoad.jpeg" id="10_t8p42"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -37,7 +40,7 @@ theme_override_font_sizes/font_size = 30
 text = "Salir"
 flat = true
 
-[node name="Container" type="GridContainer" parent="."]
+[node name="VBoxContainer" type="GridContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.142708
@@ -50,13 +53,16 @@ offset_right = -114.0
 offset_bottom = -135.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 3
+columns = 4
+script = ExtResource("3_qhh2l")
 metadata/_edit_use_anchors_ = true
 
-[node name="x01" type="Button" parent="Container"]
+[node name="x01" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_right = NodePath("../Cricket")
+focus_neighbor_bottom = NodePath("../Football")
 theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
 text = "X01 MODE"
 icon = ExtResource("2_e8d0f")
@@ -65,10 +71,13 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Cricket" type="Button" parent="Container"]
+[node name="Cricket" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../x01")
+focus_neighbor_right = NodePath("../Hundir La Flota")
+focus_neighbor_bottom = NodePath("../Parchis")
 theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
 text = "CRICKET"
 icon = ExtResource("3_wp2ej")
@@ -77,10 +86,13 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Hundir La Flota" type="Button" parent="Container"]
+[node name="Hundir La Flota" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../Cricket")
+focus_neighbor_right = NodePath("../Conecta 4")
+focus_neighbor_bottom = NodePath("../Burma")
 theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
 text = "HUNDIR LA FLOTA"
 icon = ExtResource("4_3jqoi")
@@ -89,10 +101,12 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Conecta 4" type="Button" parent="Container"]
+[node name="Conecta 4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_left = NodePath("../Hundir La Flota")
+focus_neighbor_bottom = NodePath("../Burma")
 theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
 text = "CONNECT 4"
 icon = ExtResource("5_ia6mq")
@@ -101,13 +115,44 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Football" type="Button" parent="Container"]
+[node name="Football" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+focus_neighbor_top = NodePath("../x01")
+focus_neighbor_right = NodePath("../Parchis")
 theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
 text = "FOOTBALL"
 icon = ExtResource("6_ufd63")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Parchis" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_neighbor_left = NodePath("../Football")
+focus_neighbor_top = NodePath("../Cricket")
+focus_neighbor_right = NodePath("../Burma")
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "PARCHIS"
+icon = ExtResource("9_h6sub")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Burma" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_neighbor_left = NodePath("../Parchis")
+focus_neighbor_top = NodePath("../Hundir La Flota")
+theme_override_colors/font_hover_color = Color(0.980392, 0.109804, 0.572549, 1)
+text = "BURMA ROAD"
+icon = ExtResource("10_t8p42")
 flat = true
 icon_alignment = 1
 vertical_icon_alignment = 0
@@ -131,9 +176,11 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
-[connection signal="pressed" from="Container/x01" to="." method="_on_x_01_pressed"]
-[connection signal="pressed" from="Container/Cricket" to="." method="_on_cricket_pressed"]
-[connection signal="pressed" from="Container/Hundir La Flota" to="." method="_on_hundir_la_flota_pressed"]
-[connection signal="pressed" from="Container/Conecta 4" to="." method="_on_conecta_4_pressed"]
-[connection signal="pressed" from="Container/Football" to="." method="_on_football_pressed"]
+[connection signal="pressed" from="VBoxContainer/x01" to="." method="_on_x_01_pressed"]
+[connection signal="pressed" from="VBoxContainer/Cricket" to="." method="_on_cricket_pressed"]
+[connection signal="pressed" from="VBoxContainer/Hundir La Flota" to="." method="_on_hundir_la_flota_pressed"]
+[connection signal="pressed" from="VBoxContainer/Conecta 4" to="." method="_on_conecta_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Football" to="." method="_on_football_pressed"]
+[connection signal="pressed" from="VBoxContainer/Parchis" to="." method="_on_parchis_pressed"]
+[connection signal="pressed" from="VBoxContainer/Burma" to="." method="_on_burma_pressed"]
 [connection signal="pressed" from="Ajustes" to="." method="_on_ajustes_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://buyon13iqexs8"]
+[gd_scene load_steps=4 format=3 uid="uid://buyon13iqexs8"]
 
 [ext_resource type="Script" path="res://Scripts/Conecta4/Conecta4_MENU.gd" id="1_6kf7g"]
 [ext_resource type="Texture2D" uid="uid://djchtjmvyh8rx" path="res://image/Fondos/conecta4_menu.png" id="2_tan8g"]
+[ext_resource type="Script" path="res://Scripts/Botones/ButtonConecta4.gd" id="3_eag7w"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -73,6 +74,7 @@ theme_override_colors/font_hover_color = Color(0.988235, 0, 0.984314, 1)
 theme_override_font_sizes/font_size = 60
 text = "NORMAL"
 flat = true
+script = ExtResource("3_eag7w")
 
 [node name="Low" type="Button" parent="HBoxContainer"]
 layout_mode = 2

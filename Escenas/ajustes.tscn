@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b55nsq4bjy3pb"]
+[gd_scene load_steps=3 format=3 uid="uid://b55nsq4bjy3pb"]
 
 [ext_resource type="Script" path="res://Scripts/ajustes.gd" id="1_ekggu"]
+[ext_resource type="Script" path="res://Scripts/Botones/ButtonAjustes.gd" id="2_04wm1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -50,6 +51,7 @@ theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " < "
 flat = true
+script = ExtResource("2_04wm1")
 
 [node name="Label" type="Label" parent="VBoxContainer/puerto"]
 layout_mode = 2
