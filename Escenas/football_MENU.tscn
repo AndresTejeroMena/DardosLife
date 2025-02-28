@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwalj822eyvts"]
+[gd_scene load_steps=5 format=3 uid="uid://dwalj822eyvts"]
 
-[ext_resource type="Script" path="res://Escenas/football_MENU.gd" id="1_fqt6a"]
+[ext_resource type="Script" path="res://Scripts/Football/football_MENU.gd" id="1_fqt6a"]
 [ext_resource type="Texture2D" uid="uid://dfap0ewbiq72" path="res://image/Football/equipos.png" id="1_tnaju"]
 [ext_resource type="Texture2D" uid="uid://buxgxy8r8skds" path="res://image/Fondos/football_menu.png" id="2_5f5iq"]
+[ext_resource type="Script" path="res://Scripts/Botones/ButtonFootball.gd" id="3_uctp8"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -47,6 +48,7 @@ theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " < "
 flat = true
+script = ExtResource("3_uctp8")
 
 [node name="Label" type="Label" parent="SelectoresEquipo/Selector1/Tipo"]
 layout_mode = 2
@@ -89,11 +91,12 @@ position = Vector2(174, 23)
 scale = Vector2(0.61125, 0.61125)
 texture = ExtResource("1_tnaju")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 3
 
 [node name=">" type="Button" parent="SelectoresEquipo/Selector1/Equipo"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../../Equipacion/>")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " > "
@@ -126,10 +129,11 @@ position = Vector2(174, 23)
 scale = Vector2(0.61125, 0.61125)
 texture = ExtResource("1_tnaju")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name=">" type="Button" parent="SelectoresEquipo/Selector1/Equipacion"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../../Equipo/>")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " > "
@@ -174,6 +178,7 @@ layout_mode = 2
 
 [node name="<" type="Button" parent="SelectoresEquipo/Selector2/Equipo"]
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../../Equipacion/<")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " < "
@@ -190,7 +195,7 @@ position = Vector2(174, 23)
 scale = Vector2(0.61125, 0.61125)
 texture = ExtResource("1_tnaju")
 hframes = 4
-vframes = 11
+vframes = 12
 frame = 3
 
 [node name=">" type="Button" parent="SelectoresEquipo/Selector2/Equipo"]
@@ -211,6 +216,7 @@ layout_mode = 2
 
 [node name="<" type="Button" parent="SelectoresEquipo/Selector2/Equipacion"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../../Equipo/<")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = " < "
@@ -227,7 +233,7 @@ position = Vector2(174, 23)
 scale = Vector2(0.61125, 0.61125)
 texture = ExtResource("1_tnaju")
 hframes = 4
-vframes = 11
+vframes = 12
 
 [node name=">" type="Button" parent="SelectoresEquipo/Selector2/Equipacion"]
 layout_mode = 2
@@ -340,6 +346,7 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="Conf_fin_partida/Limite Rondas/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_right = NodePath("../Button2")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 text = " < "
 flat = true
@@ -353,6 +360,8 @@ horizontal_alignment = 1
 
 [node name="Button2" type="Button" parent="Conf_fin_partida/Limite Rondas/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Button")
+focus_neighbor_right = NodePath("../../../Limite Goles/HBoxContainer/Button")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 text = " > "
 flat = true
@@ -372,6 +381,8 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="Conf_fin_partida/Limite Goles/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../../../Limite Rondas/HBoxContainer/Button2")
+focus_neighbor_right = NodePath("../Button2")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 text = " < "
 flat = true
@@ -385,6 +396,7 @@ horizontal_alignment = 1
 
 [node name="Button2" type="Button" parent="Conf_fin_partida/Limite Goles/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../Button")
 theme_override_colors/font_hover_color = Color(0, 0.870588, 1, 1)
 text = " > "
 flat = true

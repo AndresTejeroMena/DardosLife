@@ -1,0 +1,144 @@
+[gd_scene load_steps=4 format=3 uid="uid://5xj1rimekmyc"]
+
+[ext_resource type="Script" path="res://Scripts/Burma Road/burmaMENU.gd" id="1_ubeal"]
+[ext_resource type="Texture2D" uid="uid://c8exxk3v26jor" path="res://image/Fondos/BurmaRoad_menu.png" id="2_torap"]
+[ext_resource type="Script" path="res://Scripts/Botones/ButtonBurma.gd" id="3_qwvmd"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ubeal")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_torap")
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -232.0
+offset_top = -111.0
+offset_right = -52.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0.768627, 0.576471, 0.137255, 1)
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.849
+anchor_right = 0.108
+anchor_bottom = 0.963
+offset_left = 18.12
+offset_top = 51.08
+offset_right = 17.64
+offset_bottom = -2.04004
+theme_override_colors/font_hover_color = Color(0.768627, 0.576471, 0.137255, 1)
+theme_override_font_sizes/font_size = 40
+text = "Atras"
+flat = true
+
+[node name="NumeroJugadores" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -358.0
+offset_top = 472.0
+offset_right = 413.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="1" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "1"
+flat = true
+script = ExtResource("3_qwvmd")
+
+[node name="2" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "2"
+flat = true
+
+[node name="3" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "3"
+flat = true
+
+[node name="4" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "4"
+flat = true
+
+[node name="5" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "5"
+flat = true
+
+[node name="6" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "6"
+flat = true
+
+[node name="7" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "7"
+flat = true
+
+[node name="8" type="Button" parent="NumeroJugadores"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.733333, 0.6, 0.168627, 1)
+theme_override_font_sizes/font_size = 110
+text = "8"
+flat = true
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="NumeroJugadores/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="NumeroJugadores/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="NumeroJugadores/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="NumeroJugadores/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="NumeroJugadores/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="NumeroJugadores/6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="NumeroJugadores/7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="NumeroJugadores/8" to="." method="_on_8_pressed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dpjhfvdclln3x"]
+[gd_scene load_steps=4 format=3 uid="uid://dpjhfvdclln3x"]
 
 [ext_resource type="Script" path="res://Scripts/cricket_MODE.gd" id="1_6qgp5"]
 [ext_resource type="Texture2D" uid="uid://brv3be400bwdp" path="res://image/Fondos/cricket_menu.png" id="2_obm7v"]
+[ext_resource type="Script" path="res://Scripts/Botones/Cricket333.gd" id="3_yejs2"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -168,6 +169,7 @@ theme_override_colors/font_hover_color = Color(1, 0.447059, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "NORMAL"
 flat = true
+script = ExtResource("3_yejs2")
 
 [node name="Low" type="Button" parent="HBoxContainer"]
 layout_mode = 2
