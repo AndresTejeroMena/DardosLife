@@ -4,9 +4,16 @@ through an Arduino, is capable of sending information about where a dart has imp
 501 series, cricket, battleship, connect4, burma road, ludo and football. 
 
 Its use for commercial purposes is not permitted. 
-The game concepts of battleship and connect4 are original creations, and the creator does not allow their commercial exploitation without consent. 
+The game concepts of battleship and connect4 are original creations, and the creator does not allow their commercial exploitation without consent. <br>
+<p align="center">
+  <img src="https://github.com/AndresTejeroMena/DardosLife/blob/main/DardosLife.jpg" alt="Descripción de la imagen" width="200" height="auto">
+</p>
 
-Project developer: Andrés Tejero Mena (tejeromenaandres@gmail.com).
+<p align="center">
+  Project developer: Andrés Tejero Mena (<a href="mailto:tejeromenaandres@gmail.com">tejeromenaandres@gmail.com</a>).
+</p>
+
+
 
 ## How does it work?
 https://youtu.be/JF_7bkpHpz4
